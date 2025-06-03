@@ -37,3 +37,21 @@ pnpm build
 ```sh
 pnpm lint
 ```
+
+## 技术栈
+
+### 前端
+- Vue 3 + TypeScript
+- Vite 构建工具
+- Pinia 状态管理
+- Vue Router 路由管理
+- PWA 支持
+
+## 快速开始
+
+### 前端开发
+
+```bash
+cd frontend
+pnpm install
+pnpm dev
