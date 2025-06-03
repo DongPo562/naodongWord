@@ -1,7 +1,13 @@
 <template>
+  <div class="operationButtonContainer mobile-only">
+    <button class="btn-textbook">教材</button>
+    <button class="btn-read">阅读</button>
+    <button class="btn-record">记录</button>
+    <button class="btn-next">next</button>
+  </div>
   <div class="mainContainer">
     <div class="leftContainer">
-      <div class="operationButtonContainer">
+      <div class="operationButtonContainer desktop-only">
         <button class="btn-textbook">教材</button>
         <button class="btn-read">阅读</button>
         <button class="btn-record">记录</button>
@@ -61,10 +67,14 @@ body {
   overflow: hidden;
 }
 
-.operationButtonContainer {
+.operationButtonContainer.mobile-only {
+  display: none;
+}
+
+.operationButtonContainer.desktop-only {
   width: 18vh;
   height: 100%;
-  padding-top:3vh;
+  padding-top: 3vh;
 }
 
 .operationButtonContainer button {
@@ -159,33 +169,42 @@ body {
   object-position: center;
 }
 
-@media (max-width: 768px) {
-  .mainContainer {
+@media (max-width: 1280px) {
+  body {
+    display: flex;
     flex-direction: column;
   }
   
-  .leftContainer {
-    flex-direction: column;
+  .operationButtonContainer.desktop-only {
+    display: none;
   }
   
-  .operationButtonContainer {
+  .operationButtonContainer.mobile-only {
+    display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
     padding: 20px;
     gap: 20px;
+    background-color: #FFFFFF;
+    order: -1;
   }
   
-  .operationButtonContainer button {
-    width: 120px;
-    height: 120px;
-    font-size: 24px;
+  .operationButtonContainer.mobile-only button {
+    width: 80px;
+    height: 80px;
+    margin: 0;
+    font-size: 16px;
   }
   
-  .word-text {
-    font-size: 64px;
+  .operationButtonContainer.mobile-only .btn-next {
+    margin-top: 0 !important;
   }
   
-  .rightContainer {
-    height: 40vh;
+  .mainContainer {
+    height: calc(100vh - 120px);
   }
 }
 </style>
