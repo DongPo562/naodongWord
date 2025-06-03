@@ -68,8 +68,6 @@
 │   ├── stores/
 │   │   └── counter.ts
 │   └── views/
-│       ├── AboutView.vue
-│       └── HomeView.vue
 ├── tsconfig.app.json
 ├── tsconfig.json
 ├── tsconfig.node.json
@@ -84,3 +82,12 @@
 *   应用包含一个简单的默认页面布局（Home 和 About 视图）。
 
 构建过程顺利，没有遇到明显的错误。建议后续根据实际需求进一步完善 PWA 配置和应用功能。
+
+在vite.config.ts中添加了以下配置：
+  server: {
+    host: '0.0.0.0',
+    port: 5173,
+    strictPort: false,
+    open: false
+  }
+  

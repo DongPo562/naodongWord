@@ -169,7 +169,7 @@ body {
   object-position: center;
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 960px) {
   body {
     display: flex;
     flex-direction: column;
