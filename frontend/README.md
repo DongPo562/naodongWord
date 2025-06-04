@@ -49,9 +49,4 @@ pnpm lint
 
 ## 快速开始
 
-### 前端开发
 
-```bash
-cd frontend
-pnpm install
-pnpm dev
