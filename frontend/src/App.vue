@@ -1,6 +1,6 @@
 <template>
   <div class="operationButtonContainer mobile-only">
-    <button class="btn-textbook">教材</button>
+    <button class="btn-textbook" @click="showTextBookPage">教材</button>
     <button class="btn-read">阅读</button>
     <button class="btn-record">记录</button>
     <button class="btn-next">next</button>
@@ -8,7 +8,7 @@
   <div class="mainContainer">
     <div class="leftContainer">
       <div class="operationButtonContainer desktop-only">
-        <button class="btn-textbook">教材</button>
+        <button class="btn-textbook" @click="showTextBookPage">教材</button>
         <button class="btn-read">阅读</button>
         <button class="btn-record">记录</button>
         <button class="btn-next">next</button>
@@ -29,10 +29,39 @@
       <img src="/images/elephant.png" alt="elephant" class="elephant-image" />
     </div>
   </div>
+  
+  <!-- 教材选择模态窗口 -->
+  <TextbookChoosePage 
+    v-if="isTextbookModalVisible" 
+    @close="closeTextbookModal" 
+    @confirm="handleTextbookConfirm"
+  />
 </template>
 
 <script setup lang="ts">
-// Vue 3 Composition API
+import { ref } from 'vue'
+import TextbookChoosePage from './components/TextbookChoosePage.vue'
+
+// 响应式数据
+const isTextbookModalVisible = ref(false)
+
+// 显示教材选择页面
+const showTextBookPage = () => {
+  isTextbookModalVisible.value = true
+}
+
+// 关闭教材选择模态窗口
+const closeTextbookModal = () => {
+  isTextbookModalVisible.value = false
+}
+
+// 处理教材选择确认
+const handleTextbookConfirm = (selection: { publisher: any, grade: string }) => {
+  console.log('选择的教材:', selection)
+  // 这里可以更新版本显示文本
+  // 暂时只是关闭模态窗口
+  isTextbookModalVisible.value = false
+}
 </script>
 
 <style scoped>
@@ -84,7 +113,7 @@ body {
   background-color: #F3843F;
   border: none;
   border-radius: 1.5vh 4.5vh 1.5vh 4.5vh;
-  box-shadow: 5px 3px 3px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 4px 2px 2px 0px rgba(0, 0, 0, 0.25);
   color: #FFFFFF;
   font-family: Inter;
   font-size: 3.5vh;
