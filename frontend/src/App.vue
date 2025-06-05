@@ -176,7 +176,7 @@ body {
 
 .letterAssociationContainer {
   flex: 1;
-  background-color: #E9A6A6;
+  border: 1px solid #080808;
   border-radius: 10px;
 }
 

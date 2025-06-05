@@ -9,7 +9,9 @@ import { VitePWA } from 'vite-plugin-pwa'
 export default defineConfig({
   plugins: [
     vue(),
-    vueDevTools(),
+    vueDevTools({
+      launchEditor: 'trae'
+    }),
     VitePWA({
       registerType: 'autoUpdate',
       devOptions: {
