@@ -75,7 +75,7 @@ const publishers = ref<Publisher[]>([
   { id: 'kepu', name: '科普版', hasGrade2: false },
   { id: 'liaoning', name: '辽宁师大版', hasGrade2: false },
   { id: 'tsinghua', name: '清华大学版', hasGrade2: true },
-  { id: 'pep', name: '人教版（PEP) (主编：吴欣)', hasGrade2: false }
+  { id: 'rjynjqd', name: '人教版（一年级起点）（主编：吴欣）', hasGrade2: true }
 ])
 
 // 所有年级选项
