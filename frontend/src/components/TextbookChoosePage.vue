@@ -84,7 +84,6 @@ const allGrades = [
   '三年级上', '三年级下',
   '四年级上', '四年级下',
   '五年级上', '五年级下',
-  '六年级上', '六年级下'
 ]
 
 const selectedPublisher = ref<Publisher | null>(null)
