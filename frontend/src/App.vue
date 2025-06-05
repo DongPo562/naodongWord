@@ -64,6 +64,17 @@ const handleTextbookConfirm = (selection: { publisher: any, grade: string }) => 
 }
 </script>
 
+<style>
+/* 全局样式重置 */
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+</style>
+
 <style scoped>
 * {
   box-sizing: border-box;
@@ -71,15 +82,9 @@ const handleTextbookConfirm = (selection: { publisher: any, grade: string }) => 
   padding: 0;
 }
 
-body {
-  overflow: hidden;
-  margin: 0;
-  padding: 0;
-}
-
 .mainContainer {
   width: 100%;
-  height: calc(100vh - 16px);
+  height: 100vh;
   display: flex;
   overflow: hidden;
   background-color: #FFFFFF;
