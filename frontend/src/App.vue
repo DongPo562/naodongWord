@@ -1,17 +1,27 @@
 <template>
-  <div class="operationButtonContainer mobile-only">
-    <button class="btn-textbook" @click="showTextBookPage">教材</button>
-    <button class="btn-read">阅读</button>
-    <button class="btn-record">记录</button>
-    <button class="btn-next" @click="nextWord">next</button>
+  <div class="mainTopMenuPanel mobile-only">
+    <div class="menuButtonContainer">
+      <button class="btn-textbook" @click="showTextBookPage">教材</button>
+      <button class="btn-read">阅读</button>
+      <button class="btn-record">记录</button>
+    </div>
+    <div class="nextBackButtonContainer">
+      <button class="btn-back" @click="prevWord">back</button>
+      <button class="btn-next" @click="nextWord">next</button>
+    </div>
   </div>
   <div class="mainContainer">
     <div class="leftContainer">
-      <div class="operationButtonContainer desktop-only">
-        <button class="btn-textbook" @click="showTextBookPage">教材</button>
-        <button class="btn-read">阅读</button>
-        <button class="btn-record">记录</button>
-        <button class="btn-next" @click="nextWord">next</button>
+      <div class="mainLeftMenuPanel desktop-only">
+        <div class="menuButtonContainer">
+          <button class="btn-textbook" @click="showTextBookPage">教材</button>
+          <button class="btn-read">阅读</button>
+          <button class="btn-record">记录</button>
+        </div>
+        <div class="nextBackButtonContainer">
+          <button class="btn-back" @click="prevWord">back</button>
+          <button class="btn-next" @click="nextWord">next</button>
+        </div>
       </div>
       <div class="memoryContainer">
         <div class="versionContainer">
@@ -19,6 +29,12 @@
         </div>
         <div class="wordContainer">
           <span class="word-text">{{ currentWord?.word || 'eraser' }}</span>
+        </div>
+        <div class="progress-container">
+          <div class="progress-bar">
+            <div class="progress-fill" :style="{ width: progressPercentage + '%' }"></div>
+          </div>
+          <span class="progress-text">{{ learnedCount }}/{{ totalCount }}</span>
         </div>
         <div class="letterAssociationContainer">
           <!-- 字母联想区域 -->
@@ -85,6 +101,14 @@ const versionText = computed(() => {
   return '人教版三年级下 Unit5'
 })
 
+// 计算学习进度
+const totalCount = computed(() => currentUnitContent.value.length)
+const learnedCount = computed(() => currentWordIndex.value + 1)
+const progressPercentage = computed(() => {
+  if (totalCount.value === 0) return 0
+  return Math.round((learnedCount.value / totalCount.value) * 100)
+})
+
 // 加载单词数据
 const loadWordsData = async () => {
   try {
@@ -130,6 +154,20 @@ const handleTextbookConfirm = async (selection: { publisher: any, grade: string 
   selectedTextbook.value = selection
   isTextbookModalVisible.value = false
   await loadWordsData()
+}
+
+// 上一个单词
+const prevWord = () => {
+  if (currentUnitContent.value.length === 0) {
+    return
+  }
+  
+  if (currentWordIndex.value === 0) {
+    alert('这是本单元第一个单词')
+    return
+  }
+  
+  currentWordIndex.value--
 }
 
 // 下一个单词
@@ -189,17 +227,20 @@ html, body {
   overflow: hidden;
 }
 
-.operationButtonContainer.mobile-only {
+.mainTopMenuPanel.mobile-only {
   display: none;
 }
 
-.operationButtonContainer.desktop-only {
+.mainLeftMenuPanel.desktop-only {
   width: 18vh;
   height: 100%;
   padding-top: 3vh;
 }
 
-.operationButtonContainer button {
+/* 菜单按钮样式 (教材、阅读、记录) */
+.btn-textbook,
+.btn-read,
+.btn-record {
   width: 14vh;
   height: 14vh;
   margin: 2vh 1vh 1.5vh 2vh;
@@ -216,12 +257,43 @@ html, body {
   transition: all 0.3s ease;
 }
 
-.btn-next {
-  border-radius: 50% !important;
-  margin-top: 15vh !important;
+.btn-textbook:hover,
+.btn-read:hover,
+.btn-record:hover {
+  transform: translateY(-2px);
+  box-shadow: 7px 6px 6px 0px rgba(0, 0, 0, 0.3);
 }
 
-.operationButtonContainer button:hover {
+.nextBackButtonContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8vh;
+}
+
+
+/* 导航按钮样式 (back、next) */
+.btn-back,
+.btn-next {
+  width: 14vh;
+  height: 14vh;
+  margin: 2vh 1vh 1.5vh 2vh;
+  background-color: #F3843F;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 4px 2px 2px 0px rgba(0, 0, 0, 0.25);
+  color: #FFFFFF;
+  font-family: Inter;
+  font-size: 3.5vh;
+  font-weight: 300;
+  text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-back:hover,
+.btn-next:hover {
   transform: translateY(-2px);
   box-shadow: 7px 6px 6px 0px rgba(0, 0, 0, 0.3);
 }
@@ -267,6 +339,41 @@ html, body {
   margin-top:4vh;
 }
 
+.progress-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  width: 80%;
+  height: 60px;
+  margin: 20px auto;
+}
+
+.progress-bar {
+  flex: 1;
+  height: 8px;
+  background-color: #E0E0E0;
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+}
+
+.progress-fill {
+  height: 100%;
+  background-color: #F3843F;
+  border-radius: 4px;
+  transition: width 0.3s ease;
+}
+
+.progress-text {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 500;
+  color: #525252;
+  min-width: 50px;
+  text-align: center;
+}
+
 .letterAssociationContainer {
   flex: 1;
   border: 1px solid #080808;
@@ -299,11 +406,11 @@ html, body {
     flex-direction: column;
   }
   
-  .operationButtonContainer.desktop-only {
+  .mainLeftMenuPanel.desktop-only {
     display: none;
   }
   
-  .operationButtonContainer.mobile-only {
+  .mainTopMenuPanel.mobile-only {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -316,14 +423,30 @@ html, body {
     order: -1;
   }
   
-  .operationButtonContainer.mobile-only button {
+  .mainTopMenuPanel.mobile-only .menuButtonContainer {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .mainTopMenuPanel.mobile-only .nextBackButtonContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-top: 0!important;
+  }
+  
+  .mainTopMenuPanel.mobile-only button {
     width: 80px;
     height: 80px;
     margin: 0;
     font-size: 16px;
   }
   
-  .operationButtonContainer.mobile-only .btn-next {
+  .mainTopMenuPanel.mobile-only .btn-back {
+    margin-top: 0 !important;
+  }
+  
+  .mainTopMenuPanel.mobile-only .btn-next {
     margin-top: 0 !important;
   }
   
