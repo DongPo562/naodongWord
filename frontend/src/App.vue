@@ -3,7 +3,7 @@
     <button class="btn-textbook" @click="showTextBookPage">教材</button>
     <button class="btn-read">阅读</button>
     <button class="btn-record">记录</button>
-    <button class="btn-next">next</button>
+    <button class="btn-next" @click="nextWord">next</button>
   </div>
   <div class="mainContainer">
     <div class="leftContainer">
@@ -11,14 +11,14 @@
         <button class="btn-textbook" @click="showTextBookPage">教材</button>
         <button class="btn-read">阅读</button>
         <button class="btn-record">记录</button>
-        <button class="btn-next">next</button>
+        <button class="btn-next" @click="nextWord">next</button>
       </div>
       <div class="memoryContainer">
         <div class="versionContainer">
-          <span class="version-text">人教版三年级下 Unit5</span>
+          <span class="version-text">{{ versionText }}</span>
         </div>
         <div class="wordContainer">
-          <span class="word-text">eraser</span>
+          <span class="word-text">{{ currentWord?.word || 'eraser' }}</span>
         </div>
         <div class="letterAssociationContainer">
           <!-- 字母联想区域 -->
@@ -36,14 +36,83 @@
     @close="closeTextbookModal" 
     @confirm="handleTextbookConfirm"
   />
+  
+  <!-- 恭喜完成模态窗口 -->
+  <CompleteUnitLearn 
+    :visible="isCongratulationModalVisible"
+    :version-text="versionText"
+    :word-count="currentUnitContent.length"
+    @close="closeCongratulationModal"
+  />
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue'
+import { ref, computed } from 'vue'
 import TextbookChoosePage from './components/TextbookChoosePage.vue'
+import CompleteUnitLearn from './components/CompleteUnitLearn.vue'
+
+// 定义单词类型
+interface Word {
+  wordID: string
+  word: string
+  phoneticUK: string
+  phoneticUS: string
+  definition: string
+}
 
 // 响应式数据
 const isTextbookModalVisible = ref(false)
+const isCongratulationModalVisible = ref(false)
+const currentUnitContent = ref<Word[]>([])
+const currentWordIndex = ref(0)
+const selectedTextbook = ref<{ publisher: any, grade: string } | null>(null)
+
+// 计算当前单词
+const currentWord = computed(() => {
+  if (currentUnitContent.value.length > 0 && currentWordIndex.value < currentUnitContent.value.length) {
+    return currentUnitContent.value[currentWordIndex.value]
+  }
+  return null
+})
+
+// 计算版本显示文本
+const versionText = computed(() => {
+  if (selectedTextbook.value) {
+    const publisherName = selectedTextbook.value.publisher.name
+    const grade = selectedTextbook.value.grade
+    return `${publisherName}${grade} Unit1`
+  }
+  return '人教版三年级下 Unit5'
+})
+
+// 加载单词数据
+const loadWordsData = async () => {
+  try {
+    // 加载基础单词数据
+    const wordsResponse = await fetch('/src/data/words/words1-100.json')
+    const wordsData: Word[] = await wordsResponse.json()
+    
+    if (selectedTextbook.value) {
+      // 加载词汇表数据
+      const vocabularyPath = `/src/data/vocabulary/${selectedTextbook.value.publisher.id}_${selectedTextbook.value.grade}.json`
+      console.log('词汇表路径:', vocabularyPath)
+      const vocabularyResponse = await fetch(vocabularyPath)
+      const vocabularyData = await vocabularyResponse.json()
+      
+      // 获取Unit 1的单词ID列表
+      const unit1WordIds = vocabularyData.units['Unit 1'] || []
+      
+      // 根据ID查找对应的单词
+      currentUnitContent.value = unit1WordIds.map((id: string) => {
+        return wordsData.find(word => word.wordID === id)
+      }).filter(Boolean)
+      
+      currentWordIndex.value = 0
+    }
+  } catch (error) {
+    console.error('加载单词数据失败:', error)
+  }
+}
 
 // 显示教材选择页面
 const showTextBookPage = () => {
@@ -56,11 +125,30 @@ const closeTextbookModal = () => {
 }
 
 // 处理教材选择确认
-const handleTextbookConfirm = (selection: { publisher: any, grade: string }) => {
+const handleTextbookConfirm = async (selection: { publisher: any, grade: string }) => {
   console.log('选择的教材:', selection)
-  // 这里可以更新版本显示文本
-  // 暂时只是关闭模态窗口
+  selectedTextbook.value = selection
   isTextbookModalVisible.value = false
+  await loadWordsData()
+}
+
+// 下一个单词
+const nextWord = () => {
+  if (currentUnitContent.value.length === 0) {
+    return
+  }
+  
+  if (currentWordIndex.value < currentUnitContent.value.length - 1) {
+    currentWordIndex.value++
+  } else {
+    // 显示恭喜模态窗口
+    isCongratulationModalVisible.value = true
+  }
+}
+
+// 关闭恭喜模态窗口
+const closeCongratulationModal = () => {
+  isCongratulationModalVisible.value = false
 }
 </script>
 
@@ -202,6 +290,8 @@ html, body {
   object-fit: cover;
   object-position: center;
 }
+
+
 
 @media (max-width: 960px) {
   body {
