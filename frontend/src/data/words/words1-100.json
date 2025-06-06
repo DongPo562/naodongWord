@@ -1,0 +1,380 @@
+[
+  {
+    "wordID": "1",
+    "word": "father",
+    "phoneticUK": "/ˈfɑːðə(r)/",
+    "phoneticUS": "/ˈfɑðər/",
+    "definition": "父亲"
+  },
+  {
+    "wordID": "2",
+    "word": "mother",
+    "phoneticUK": "/ˈmʌðə(r)/",
+    "phoneticUS": "/ˈmʌðər/",
+    "definition": "母亲"
+  },
+  {
+    "wordID": "3",
+    "word": "brother",
+    "phoneticUK": "/ˈbrʌðə(r)/",
+    "phoneticUS": "/ˈbrʌðər/",
+    "definition": "兄弟"
+  },
+  {
+    "wordID": "4",
+    "word": "sister",
+    "phoneticUK": "/ˈsɪstə(r)/",
+    "phoneticUS": "/ˈsɪstər/",
+    "definition": "姐妹"
+  },
+  {
+    "wordID": "5",
+    "word": "grandmother",
+    "phoneticUK": "/ˈɡrænmʌðə(r)/",
+    "phoneticUS": "/ˈɡrænmʌðər/",
+    "definition": "祖母"
+  },
+  {
+    "wordID": "6",
+    "word": "grandfather",
+    "phoneticUK": "/ˈɡrænfɑːðə(r)/",
+    "phoneticUS": "/ˈɡrænfɑðər/",
+    "definition": "祖父"
+  },
+  {
+    "wordID": "7",
+    "word": "who",
+    "phoneticUK": "/huː/",
+    "phoneticUS": "/huː/",
+    "definition": "谁"
+  },
+  {
+    "wordID": "8",
+    "word": "he",
+    "phoneticUK": "/hiː/",
+    "phoneticUS": "/hiː/",
+    "definition": "他"
+  },
+  {
+    "wordID": "9",
+    "word": "she",
+    "phoneticUK": "/ʃiː/",
+    "phoneticUS": "/ʃi/",
+    "definition": "她"
+  },
+  {
+    "wordID": "10",
+    "word": "classmate",
+    "phoneticUK": "/ˈklɑːsmeɪt/",
+    "phoneticUS": "/ˈklæsmeɪt/",
+    "definition": "同学"
+  },
+  {
+    "wordID": "11",
+    "word": "friend",
+    "phoneticUK": "/frend/",
+    "phoneticUS": "/frend/",
+    "definition": "朋友"
+  },
+  {
+    "wordID": "12",
+    "word": "woman",
+    "phoneticUK": "/ˈwʊmən/",
+    "phoneticUS": "/ˈwʊmən/",
+    "definition": "女人"
+  },
+  {
+    "wordID": "13",
+    "word": "girl",
+    "phoneticUK": "/ɡɜːl/",
+    "phoneticUS": "/ɡɜːrl/",
+    "definition": "女孩"
+  },
+  {
+    "wordID": "14",
+    "word": "man",
+    "phoneticUK": "/mæn/",
+    "phoneticUS": "/mæn/",
+    "definition": "男人"
+  },
+  {
+    "wordID": "15",
+    "word": "boy",
+    "phoneticUK": "/bɔɪ/",
+    "phoneticUS": "/bɔɪ/",
+    "definition": "男孩"
+  },
+  {
+    "wordID": "16",
+    "word": "look",
+    "phoneticUK": "/lʊk/",
+    "phoneticUS": "/lʊk/",
+    "definition": "看"
+  },
+  {
+    "wordID": "17",
+    "word": "his",
+    "phoneticUK": "/hɪz/",
+    "phoneticUS": "/hɪz/",
+    "definition": "他的"
+  },
+  {
+    "wordID": "18",
+    "word": "name",
+    "phoneticUK": "/neɪm/",
+    "phoneticUS": "/neɪm/",
+    "definition": "名字"
+  },
+  {
+    "wordID": "19",
+    "word": "her",
+    "phoneticUK": "/hə(r)/",
+    "phoneticUS": "/hər/",
+    "definition": "她的"
+  },
+  {
+    "wordID": "20",
+    "word": "or",
+    "phoneticUK": "/ɔː(r)/",
+    "phoneticUS": "/ɔːr/",
+    "definition": "还是"
+  },
+  {
+    "wordID": "21",
+    "word": "big",
+    "phoneticUK": "/bɪɡ/",
+    "phoneticUS": "/bɪɡ/",
+    "definition": "大的"
+  },
+  {
+    "wordID": "22",
+    "word": "tall",
+    "phoneticUK": "/tɔːl/",
+    "phoneticUS": "/tɔːl/",
+    "definition": "高的"
+  },
+  {
+    "wordID": "23",
+    "word": "pretty",
+    "phoneticUK": "/ˈprɪti/",
+    "phoneticUS": "/ˈprɪti/",
+    "definition": "漂亮的, 可爱的"
+  },
+  {
+    "wordID": "24",
+    "word": "thin",
+    "phoneticUK": "/θɪn/",
+    "phoneticUS": "/θɪn/",
+    "definition": "瘦的"
+  },
+  {
+    "wordID": "25",
+    "word": "short",
+    "phoneticUK": "/ʃɔːt/",
+    "phoneticUS": "/ʃɔːrt/",
+    "definition": "矮的"
+  },
+  {
+    "wordID": "26",
+    "word": "handsome",
+    "phoneticUK": "/ˈhænsəm/",
+    "phoneticUS": "/ˈhænsəm/",
+    "definition": "漂亮的, 英俊的"
+  },
+  {
+    "wordID": "27",
+    "word": "new",
+    "phoneticUK": "/njuː/",
+    "phoneticUS": "/nuː/",
+    "definition": "新的"
+  },
+  {
+    "wordID": "28",
+    "word": "does",
+    "phoneticUK": "/dʌz/",
+    "phoneticUS": "/dʌz/",
+    "definition": "助动词"
+  },
+  {
+    "wordID": "29",
+    "word": "bookshop",
+    "phoneticUK": "/ˈbʊkʃɒp/",
+    "phoneticUS": "/ˈbʊkʃɑːp/",
+    "definition": "书店"
+  },
+  {
+    "wordID": "30",
+    "word": "zoo",
+    "phoneticUK": "/zuː/",
+    "phoneticUS": "/zuː/",
+    "definition": "动物园"
+  },
+  {
+    "wordID": "31",
+    "word": "school",
+    "phoneticUK": "/skuːl/",
+    "phoneticUS": "/skuːl/",
+    "definition": "学校"
+  },
+  {
+    "wordID": "32",
+    "word": "supermarket",
+    "phoneticUK": "/ˈsuːpəmɑːkɪt/",
+    "phoneticUS": "/ˈsuːpərmɑːrkɪt/",
+    "definition": "超市"
+  },
+  {
+    "wordID": "33",
+    "word": "park",
+    "phoneticUK": "/pɑːk/",
+    "phoneticUS": "/pɑːrk/",
+    "definition": "公园"
+  },
+  {
+    "wordID": "34",
+    "word": "hospital",
+    "phoneticUK": "/ˈhɒspɪtl/",
+    "phoneticUS": "/ˈhɑːspɪtl/",
+    "definition": "医院"
+  },
+  {
+    "wordID": "35",
+    "word": "go",
+    "phoneticUK": "/ɡəʊ/",
+    "phoneticUS": "/ɡoʊ/",
+    "definition": "去"
+  },
+  {
+    "wordID": "36",
+    "word": "to",
+    "phoneticUK": "/tuː/",
+    "phoneticUS": "/tuː/",
+    "definition": "向, 朝"
+  },
+  {
+    "wordID": "37",
+    "word": "grass",
+    "phoneticUK": "/ɡrɑːs/",
+    "phoneticUS": "/ɡræs/",
+    "definition": "草"
+  },
+  {
+    "wordID": "38",
+    "word": "tree",
+    "phoneticUK": "/triː/",
+    "phoneticUS": "/triː/",
+    "definition": "树"
+  },
+  {
+    "wordID": "39",
+    "word": "flower",
+    "phoneticUK": "/ˈflaʊə(r)/",
+    "phoneticUS": "/ˈflaʊər/",
+    "definition": "花"
+  },
+  {
+    "wordID": "40",
+    "word": "boat",
+    "phoneticUK": "/bəʊt/",
+    "phoneticUS": "/boʊt/",
+    "definition": "小船"
+  },
+  {
+    "wordID": "41",
+    "word": "lake",
+    "phoneticUK": "/leɪk/",
+    "phoneticUS": "/leɪk/",
+    "definition": "湖"
+  },
+  {
+    "wordID": "42",
+    "word": "hill",
+    "phoneticUK": "/hɪl/",
+    "phoneticUS": "/hɪl/",
+    "definition": "小山"
+  },
+  {
+    "wordID": "43",
+    "word": "Christmas",
+    "phoneticUK": "/ˈkrɪsməs/",
+    "phoneticUS": "/ˈkrɪsməs/",
+    "definition": "圣诞节"
+  },
+  {
+    "wordID": "44",
+    "word": "Father Christmas",
+    "phoneticUK": "",
+    "phoneticUS": "",
+    "definition": "圣诞老人"
+  },
+  {
+    "wordID": "45",
+    "word": "Christmas tree",
+    "phoneticUK": "",
+    "phoneticUS": "",
+    "definition": "圣诞树"
+  },
+  {
+    "wordID": "46",
+    "word": "card",
+    "phoneticUK": "/kɑːd/",
+    "phoneticUS": "/kɑːrd/",
+    "definition": "贺卡; 明信片"
+  },
+  {
+    "wordID": "47",
+    "word": "present",
+    "phoneticUK": "/ˈpreznt/",
+    "phoneticUS": "/ˈpreznt/",
+    "definition": "礼物"
+  },
+  {
+    "wordID": "48",
+    "word": "New Year",
+    "phoneticUK": "",
+    "phoneticUS": "",
+    "definition": "新年"
+  },
+  {
+    "wordID": "49",
+    "word": "merry",
+    "phoneticUK": "/ˈmeri/",
+    "phoneticUS": "/ˈmeri/",
+    "definition": "高兴的; 愉快的"
+  },
+  {
+    "wordID": "50",
+    "word": "too",
+    "phoneticUK": "/tuː/",
+    "phoneticUS": "/tuː/",
+    "definition": "也; 又"
+  },
+  {
+    "wordID": "51",
+    "word": "here",
+    "phoneticUK": "/hɪə(r)/",
+    "phoneticUS": "/hɪr/",
+    "definition": "这儿"
+  },
+  {
+    "wordID": "52",
+    "word": "for",
+    "phoneticUK": "/fə(r)/",
+    "phoneticUS": "/fər/",
+    "definition": "表示接受某事物或从某事物中获益的人"
+  },
+  {
+    "wordID": "53",
+    "word": "thank",
+    "phoneticUK": "/θæŋk/",
+    "phoneticUS": "/θæŋk/",
+    "definition": "谢谢"
+  },
+  {
+    "wordID": "54",
+    "word": "happy",
+    "phoneticUK": "/ˈhæpi/",
+    "phoneticUS": "/ˈhæpi/",
+    "definition": "快乐的; 幸福的"
+  }
+]
