@@ -30,15 +30,16 @@
         <div class="wordContainer">
           <span class="word-text">{{ currentWord?.word || 'eraser' }}</span>
         </div>
-        <div class="progress-container">
-          <div class="progress-bar">
-            <div class="progress-fill" :style="{ width: progressPercentage + '%' }"></div>
-          </div>
-          <span class="progress-text">{{ learnedCount }}/{{ totalCount }}</span>
-        </div>
-        <div class="letterAssociationContainer">
+
+        <div class="associationContainer">
           <!-- 字母联想区域 -->
         </div>
+        <div class="progressContainer">
+            <div class="progress-bar">
+              <div class="progress-fill" :style="{ width: progressPercentage + '%' }"></div>
+            </div>
+            <span class="progress-text">{{ learnedCount }}/{{ totalCount }}</span>
+          </div>
       </div>
     </div>
     <div class="rightContainer">
@@ -327,7 +328,6 @@ html, body {
   display: flex;
   justify-content: center;
   height: 30vh;
-
 }
 
 .word-text {
@@ -336,23 +336,24 @@ html, body {
   font-weight: 400;
   color: #000000;
   letter-spacing: 0.9vw;
-  margin-top:4vh;
+  margin-top:8vh;
 }
 
-.progress-container {
+.progressContainer {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 15px;
-  width: 80%;
+  gap: 10px;
+  width: 60%;
   height: 60px;
-  margin: 20px auto;
+  margin: 0 auto;
+
 }
 
 .progress-bar {
   flex: 1;
-  height: 8px;
-  background-color: #E0E0E0;
+  height: 4px;
+  background-color: #f0f0f0;
   border-radius: 4px;
   overflow: hidden;
   position: relative;
@@ -360,7 +361,7 @@ html, body {
 
 .progress-fill {
   height: 100%;
-  background-color: #F3843F;
+  background-color: rgba(243, 132, 63, 0.5);
   border-radius: 4px;
   transition: width 0.3s ease;
 }
@@ -374,7 +375,7 @@ html, body {
   text-align: center;
 }
 
-.letterAssociationContainer {
+.associationContainer {
   flex: 1;
   border: 1px solid #080808;
   border-radius: 10px;
