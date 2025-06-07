@@ -136,10 +136,6 @@ const progressPercentage = computed(() => {
 // 加载单词数据
 const loadWordsData = async (unit: string = '1') => {
   try {
-    // 加载基础单词数据
-    const wordsResponse = await fetch('/src/data/words/words1.json')
-    const wordsData: Word[] = await wordsResponse.json()
-    
     if (selectedTextbook.value) {
       // 加载词汇表数据
       const vocabularyPath = `/src/data/vocabulary/${selectedTextbook.value.publisher.id}_${selectedTextbook.value.grade}.json`
@@ -151,9 +147,29 @@ const loadWordsData = async (unit: string = '1') => {
       const unitKey = `Unit ${unit}`
       const unitWordIds = vocabularyData.units[unitKey] || []
       
+      // 确定需要加载哪些单词文件
+      const fileNumbers = new Set<number>()
+      unitWordIds.forEach((id: string) => {
+        const wordId = parseInt(id)
+        const fileNumber = Math.ceil(wordId / 100)
+        fileNumbers.add(fileNumber)
+      })
+      
+      // 加载所有需要的单词文件
+      const allWordsData: Word[] = []
+      for (const fileNumber of fileNumbers) {
+        try {
+          const wordsResponse = await fetch(`/src/data/words/words${fileNumber}.json`)
+          const wordsData: Word[] = await wordsResponse.json()
+          allWordsData.push(...wordsData)
+        } catch (error) {
+          console.error(`加载words${fileNumber}.json失败:`, error)
+        }
+      }
+      
       // 根据ID查找对应的单词
       currentUnitContent.value = unitWordIds.map((id: string) => {
-        return wordsData.find(word => word.wordID === id)
+        return allWordsData.find(word => word.wordID === id)
       }).filter(Boolean)
       
       currentWordIndex.value = 0
