@@ -1,0 +1,65 @@
+[
+  {
+    "wordID": "101",
+    "word": "at",
+    "phoneticUK": "/æt/",
+    "phoneticUS": "/æt/",
+    "definition": "在……点钟"
+  },
+  {
+    "wordID": "102",
+    "word": "Sunday",
+    "phoneticUK": "/ˈsʌndeɪ/",
+    "phoneticUS": "/ˈsʌndeɪ/",
+    "definition": "星期天"
+  },
+  {
+    "wordID": "103",
+    "word": "Monday",
+    "phoneticUK": "/ˈmʌndeɪ/",
+    "phoneticUS": "/ˈmʌndeɪ/",
+    "definition": "星期一"
+  },
+  {
+    "wordID": "104",
+    "word": "Tuesday",
+    "phoneticUK": "/ˈtjuːzdeɪ/",
+    "phoneticUS": "/ˈtuːzdeɪ/",
+    "definition": "星期二"
+  },
+  {
+    "wordID": "105",
+    "word": "Wednesday",
+    "phoneticUK": "/ˈwenzdeɪ/",
+    "phoneticUS": "/ˈwenzdeɪ/",
+    "definition": "星期三"
+  },
+  {
+    "wordID": "106",
+    "word": "Thursday",
+    "phoneticUK": "/ˈθɜːzdeɪ/",
+    "phoneticUS": "/ˈθɜːrzdeɪ/",
+    "definition": "星期四"
+  },
+  {
+    "wordID": "107",
+    "word": "Friday",
+    "phoneticUK": "/ˈfraɪdeɪ/",
+    "phoneticUS": "/ˈfraɪdeɪ/",
+    "definition": "星期五"
+  },
+  {
+    "wordID": "108",
+    "word": "Saturday",
+    "phoneticUK": "/ˈsætədeɪ/",
+    "phoneticUS": "/ˈsætərdeɪ/",
+    "definition": "星期六"
+  },
+  {
+    "wordID": "109",
+    "word": "today",
+    "phoneticUK": "/təˈdeɪ/",
+    "phoneticUS": "/təˈdeɪ/",
+    "definition": "今天"
+  }
+]

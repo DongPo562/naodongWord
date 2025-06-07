@@ -376,5 +376,327 @@
     "phoneticUK": "/ˈhæpi/",
     "phoneticUS": "/ˈhæpi/",
     "definition": "快乐的; 幸福的"
+  },
+  {
+    "wordID": "55",
+    "word": "play football",
+    "phoneticUK": "/pleɪ ˈfʊtbɔːl/",
+    "phoneticUS": "/pleɪ ˈfʊtbɔːl/",
+    "definition": "踢足球"
+  },
+  {
+    "wordID": "56",
+    "word": "fly a kite",
+    "phoneticUK": "/flaɪ ə kaɪt/",
+    "phoneticUS": "/flaɪ ə kaɪt/",
+    "definition": "放风筝"
+  },
+  {
+    "wordID": "57",
+    "word": "ride a bike",
+    "phoneticUK": "/raɪd ə baɪk/",
+    "phoneticUS": "/raɪd ə baɪk/",
+    "definition": "骑自行车"
+  },
+  {
+    "wordID": "58",
+    "word": "make a model plane",
+    "phoneticUK": "/meɪk ə ˈmɒdl pleɪn/",
+    "phoneticUS": "/meɪk ə ˈmɑːdl pleɪn/",
+    "definition": "做飞机模型"
+  },
+  {
+    "wordID": "59",
+    "word": "swim",
+    "phoneticUK": "/swɪm/",
+    "phoneticUS": "/swɪm/",
+    "definition": "游泳"
+  },
+  {
+    "wordID": "60",
+    "word": "make a snowman",
+    "phoneticUK": "/meɪk ə ˈsnəʊmæn/",
+    "phoneticUS": "/meɪk ə ˈsnoʊmæn/",
+    "definition": "堆雪人"
+  },
+  {
+    "wordID": "61",
+    "word": "can't",
+    "phoneticUK": "/kɑːnt/",
+    "phoneticUS": "/kænt/",
+    "definition": "不能，不会"
+  },
+  {
+    "wordID": "62",
+    "word": "rainy",
+    "phoneticUK": "/ˈreɪni/",
+    "phoneticUS": "/ˈreɪni/",
+    "definition": "下雨的"
+  },
+  {
+    "wordID": "63",
+    "word": "cloudy",
+    "phoneticUK": "/ˈklaʊdi/",
+    "phoneticUS": "/ˈklaʊdi/",
+    "definition": "多云的"
+  },
+  {
+    "wordID": "64",
+    "word": "snowy",
+    "phoneticUK": "/ˈsnəʊi/",
+    "phoneticUS": "/ˈsnoʊi/",
+    "definition": "下雪的"
+  },
+  {
+    "wordID": "65",
+    "word": "windy",
+    "phoneticUK": "/ˈwɪndi/",
+    "phoneticUS": "/ˈwɪndi/",
+    "definition": "刮风的"
+  },
+  {
+    "wordID": "66",
+    "word": "sunny",
+    "phoneticUK": "/ˈsʌni/",
+    "phoneticUS": "/ˈsʌni/",
+    "definition": "晴朗的"
+  },
+  {
+    "wordID": "67",
+    "word": "umbrella",
+    "phoneticUK": "/ʌmˈbrelə/",
+    "phoneticUS": "/ʌmˈbrelə/",
+    "definition": "雨伞"
+  },
+  {
+    "wordID": "68",
+    "word": "weather",
+    "phoneticUK": "/ˈweðə(r)/",
+    "phoneticUS": "/ˈweðər/",
+    "definition": "天气"
+  },
+  {
+    "wordID": "69",
+    "word": "wow",
+    "phoneticUK": "/waʊ/",
+    "phoneticUS": "/waʊ/",
+    "definition": "哇"
+  },
+  {
+    "wordID": "70",
+    "word": "let's",
+    "phoneticUK": "/lets/",
+    "phoneticUS": "/lets/",
+    "definition": "让我们……"
+  },
+  {
+    "wordID": "71",
+    "word": "spring",
+    "phoneticUK": "/sprɪŋ/",
+    "phoneticUS": "/sprɪŋ/",
+    "definition": "春天"
+  },
+  {
+    "wordID": "72",
+    "word": "summer",
+    "phoneticUK": "/ˈsʌmə(r)/",
+    "phoneticUS": "/ˈsʌmər/",
+    "definition": "夏天"
+  },
+  {
+    "wordID": "73",
+    "word": "autumn",
+    "phoneticUK": "/ˈɔːtəm/",
+    "phoneticUS": "/ˈɔːtəm/",
+    "definition": "秋天"
+  },
+  {
+    "wordID": "74",
+    "word": "winter",
+    "phoneticUK": "/ˈwɪntə(r)/",
+    "phoneticUS": "/ˈwɪntər/",
+    "definition": "冬天"
+  },
+  {
+    "wordID": "75",
+    "word": "hot",
+    "phoneticUK": "/hɒt/",
+    "phoneticUS": "/hɑːt/",
+    "definition": "炎热的"
+  },
+  {
+    "wordID": "76",
+    "word": "warm",
+    "phoneticUK": "/wɔːm/",
+    "phoneticUS": "/wɔːrm/",
+    "definition": "温暖的"
+  },
+  {
+    "wordID": "77",
+    "word": "cool",
+    "phoneticUK": "/kuːl/",
+    "phoneticUS": "/kuːl/",
+    "definition": "凉爽的"
+  },
+  {
+    "wordID": "78",
+    "word": "cold",
+    "phoneticUK": "/kəʊld/",
+    "phoneticUS": "/koʊld/",
+    "definition": "寒冷的"
+  },
+  {
+    "wordID": "79",
+    "word": "favourite",
+    "phoneticUK": "/ˈfeɪvərɪt/",
+    "phoneticUS": "/ˈfeɪvərɪt/",
+    "definition": "最喜欢的"
+  },
+  {
+    "wordID": "80",
+    "word": "season",
+    "phoneticUK": "/ˈsiːzn/",
+    "phoneticUS": "/ˈsiːzn/",
+    "definition": "季节"
+  },
+  {
+    "wordID": "81",
+    "word": "eleven",
+    "phoneticUK": "/ɪˈlevn/",
+    "phoneticUS": "/ɪˈlevn/",
+    "definition": "十一"
+  },
+  {
+    "wordID": "82",
+    "word": "twelve",
+    "phoneticUK": "/twelv/",
+    "phoneticUS": "/twelv/",
+    "definition": "十二"
+  },
+  {
+    "wordID": "83",
+    "word": "twenty",
+    "phoneticUK": "/ˈtwenti/",
+    "phoneticUS": "/ˈtwenti/",
+    "definition": "二十"
+  },
+  {
+    "wordID": "84",
+    "word": "thirty",
+    "phoneticUK": "/ˈθɜːti/",
+    "phoneticUS": "/ˈθɜːrti/",
+    "definition": "三十"
+  },
+  {
+    "wordID": "85",
+    "word": "forty",
+    "phoneticUK": "/ˈfɔːti/",
+    "phoneticUS": "/ˈfɔːrti/",
+    "definition": "四十"
+  },
+  {
+    "wordID": "86",
+    "word": "fifty",
+    "phoneticUK": "/ˈfɪfti/",
+    "phoneticUS": "/ˈfɪfti/",
+    "definition": "五十"
+  },
+  {
+    "wordID": "87",
+    "word": "thirteen",
+    "phoneticUK": "/ˌθɜːˈtiːn/",
+    "phoneticUS": "/ˌθɜːrˈtiːn/",
+    "definition": "十三"
+  },
+  {
+    "wordID": "88",
+    "word": "fourteen",
+    "phoneticUK": "/ˌfɔːˈtiːn/",
+    "phoneticUS": "/ˌfɔːrˈtiːn/",
+    "definition": "十四"
+  },
+  {
+    "wordID": "89",
+    "word": "fifteen",
+    "phoneticUK": "/ˌfɪfˈtiːn/",
+    "phoneticUS": "/ˌfɪfˈtiːn/",
+    "definition": "十五"
+  },
+  {
+    "wordID": "90",
+    "word": "time",
+    "phoneticUK": "/taɪm/",
+    "phoneticUS": "/taɪm/",
+    "definition": "时间"
+  },
+  {
+    "wordID": "91",
+    "word": "playtime",
+    "phoneticUK": "/ˈpleɪtaɪm/",
+    "phoneticUS": "/ˈpleɪtaɪm/",
+    "definition": "游戏时间，课间休息时间"
+  },
+  {
+    "wordID": "92",
+    "word": "get up",
+    "phoneticUK": "/ɡet ʌp/",
+    "phoneticUS": "/ɡet ʌp/",
+    "definition": "起床"
+  },
+  {
+    "wordID": "93",
+    "word": "eat breakfast",
+    "phoneticUK": "/iːt ˈbrekfəst/",
+    "phoneticUS": "/iːt ˈbrekfəst/",
+    "definition": "吃早饭"
+  },
+  {
+    "wordID": "94",
+    "word": "go to school",
+    "phoneticUK": "/ɡəʊ tuː skuːl/",
+    "phoneticUS": "/ɡoʊ tuː skuːl/",
+    "definition": "上学"
+  },
+  {
+    "wordID": "95",
+    "word": "eat lunch",
+    "phoneticUK": "/iːt lʌntʃ/",
+    "phoneticUS": "/iːt lʌntʃ/",
+    "definition": "吃午饭"
+  },
+  {
+    "wordID": "96",
+    "word": "go home",
+    "phoneticUK": "/ɡəʊ həʊm/",
+    "phoneticUS": "/ɡoʊ hoʊm/",
+    "definition": "回家"
+  },
+  {
+    "wordID": "97",
+    "word": "eat dinner",
+    "phoneticUK": "/iːt ˈdɪnə(r)/",
+    "phoneticUS": "/iːt ˈdɪnər/",
+    "definition": "吃晚饭"
+  },
+  {
+    "wordID": "98",
+    "word": "go to bed",
+    "phoneticUK": "/ɡəʊ tuː bed/",
+    "phoneticUS": "/ɡoʊ tuː bed/",
+    "definition": "上床，睡觉"
+  },
+  {
+    "wordID": "99",
+    "word": "when",
+    "phoneticUK": "/wen/",
+    "phoneticUS": "/wen/",
+    "definition": "什么时候，何时"
+  },
+  {
+    "wordID": "100",
+    "word": "every day",
+    "phoneticUK": "/ˈevri deɪ/",
+    "phoneticUS": "/ˈevri deɪ/",
+    "definition": "每天"
   }
 ]
