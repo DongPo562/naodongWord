@@ -2,35 +2,21 @@
   <div class="modal-overlay" @click="closeModal">
     <div class="modal-content" @click.stop>
       <div class="modal-header">
-        <h2>选择教材</h2>
+        <h2>选择单元</h2>
         <button class="close-btn" @click="closeModal">×</button>
       </div>
       
       <div class="modal-body">
         <div class="selection-section">
-          <h3>出版社</h3>
-          <div class="publisher-grid">
+          <h3>{{ textbookInfo }}</h3>
+          <div class="unit-grid">
             <button 
-              v-for="publisher in publishers" 
-              :key="publisher.id"
-              :class="['publisher-btn', { active: selectedPublisher?.id === publisher.id }]"
-              @click="selectPublisher(publisher)"
+              v-for="unit in availableUnits" 
+              :key="unit.key"
+              :class="['unit-btn', { active: selectedUnit === unit.number }]"
+              @click="selectUnit(unit.number)"
             >
-              {{ publisher.name }}
-            </button>
-          </div>
-        </div>
-        
-        <div class="selection-section" v-if="selectedPublisher">
-          <h3>年级</h3>
-          <div class="grade-grid">
-            <button 
-              v-for="grade in availableGrades" 
-              :key="grade"
-              :class="['grade-btn', { active: selectedGrade === grade }]"
-              @click="selectGrade(grade)"
-            >
-              {{ grade }}
+              {{ unit.display }}
             </button>
           </div>
         </div>
@@ -40,7 +26,7 @@
         <button class="cancel-btn" @click="closeModal">取消</button>
         <button 
           class="confirm-btn" 
-          :disabled="!selectedPublisher || !selectedGrade"
+          :disabled="!selectedUnit"
           @click="confirmSelection"
         >
           确定
@@ -53,68 +39,80 @@
 <script setup lang="ts">
 import { ref, computed, onMounted } from 'vue'
 
-interface Publisher {
-  id: string
-  name: string
-  hasGrade2: boolean
+interface UnitInfo {
+  key: string
+  number: string
+  display: string
 }
+
+const props = defineProps<{
+  textbookSelection: { publisher: any, grade: string } | null
+  currentUnit: string
+}>()
 
 const emit = defineEmits(['close', 'confirm'])
 
-// 出版社列表
-const publishers = ref<Publisher[]>([
-  { id: 'bsd', name: '北师大版', hasGrade2: false },
-  { id: 'cqu', name: '重庆大学版', hasGrade2: false },
-  { id: 'fj', name: '闽教版', hasGrade2: false },
-  { id: 'gd', name: '粤教粤人版', hasGrade2: false },
-  { id: 'hebei', name: '冀教版（一年级起点）', hasGrade2: true },
-  { id: 'hunan', name: '湘少版', hasGrade2: false },
-  { id: 'eec', name: '教科版 (EEC学院)', hasGrade2: false },
-  { id: 'kj', name: '教科版 (主编：龚亚夫&鲁宗干)', hasGrade2: false },
-  { id: 'jieli', name: '接力版', hasGrade2: false },
-  { id: 'kepu', name: '科普版', hasGrade2: false },
-  { id: 'liaoning', name: '辽宁师大版', hasGrade2: false },
-  { id: 'tsinghua', name: '清华大学版', hasGrade2: true },
-  { id: 'rjynjqd', name: '人教版（一年级起点）', hasGrade2: true }
-])
+const selectedUnit = ref<string>('')
+const availableUnits = ref<UnitInfo[]>([])
 
-// 所有年级选项
-const allGrades = [
-  '二年级上', '二年级下',
-  '三年级上', '三年级下',
-  '四年级上', '四年级下',
-  '五年级上', '五年级下',
-]
-
-const selectedPublisher = ref<Publisher | null>(null)
-const selectedGrade = ref<string>('')
-
-// 根据选择的出版社计算可用年级
-const availableGrades = computed(() => {
-  if (!selectedPublisher.value) return []
-  
-  if (selectedPublisher.value.hasGrade2) {
-    return allGrades
-  } else {
-    return allGrades.filter(grade => !grade.includes('二年级'))
+// 计算教材信息显示文本
+const textbookInfo = computed(() => {
+  if (props.textbookSelection) {
+    const publisherName = props.textbookSelection.publisher.name
+    const grade = props.textbookSelection.grade
+    return `${publisherName}${grade}`
   }
+  return '人教版三年级下'
 })
 
-// 选择出版社
-const selectPublisher = (publisher: Publisher) => {
-  selectedPublisher.value = publisher
-  selectedGrade.value = '' // 重置年级选择
-  
-  // 缓存选择
-  localStorage.setItem('selectedPublisher', JSON.stringify(publisher))
+// 加载可用单元
+const loadAvailableUnits = async () => {
+  if (!props.textbookSelection) {
+    // 默认单元
+    availableUnits.value = [
+      { key: 'Unit 1', number: '1', display: 'Unit 1' },
+      { key: 'Unit 2', number: '2', display: 'Unit 2' },
+      { key: 'Unit 3', number: '3', display: 'Unit 3' },
+      { key: 'Unit 4', number: '4', display: 'Unit 4' },
+      { key: 'Unit 5', number: '5', display: 'Unit 5' },
+      { key: 'Unit 6', number: '6', display: 'Unit 6' }
+    ]
+    return
+  }
+
+  try {
+    // 加载词汇表数据
+    const vocabularyPath = `/src/data/vocabulary/${props.textbookSelection.publisher.id}_${props.textbookSelection.grade}.json`
+    const vocabularyResponse = await fetch(vocabularyPath)
+    const vocabularyData = await vocabularyResponse.json()
+    
+    // 获取所有单元
+    const units = vocabularyData.units || {}
+    availableUnits.value = Object.keys(units).map(unitKey => {
+      const unitNumber = unitKey.replace('Unit ', '')
+      return {
+        key: unitKey,
+        number: unitNumber,
+        display: unitKey
+      }
+    })
+  } catch (error) {
+    console.error('加载单元数据失败:', error)
+    // 使用默认单元作为后备
+    availableUnits.value = [
+      { key: 'Unit 1', number: '1', display: 'Unit 1' },
+      { key: 'Unit 2', number: '2', display: 'Unit 2' },
+      { key: 'Unit 3', number: '3', display: 'Unit 3' },
+      { key: 'Unit 4', number: '4', display: 'Unit 4' },
+      { key: 'Unit 5', number: '5', display: 'Unit 5' },
+      { key: 'Unit 6', number: '6', display: 'Unit 6' }
+    ]
+  }
 }
 
-// 选择年级
-const selectGrade = (grade: string) => {
-  selectedGrade.value = grade
-  
-  // 缓存选择
-  localStorage.setItem('selectedGrade', grade)
+// 选择单元
+const selectUnit = (unitNumber: string) => {
+  selectedUnit.value = unitNumber
 }
 
 // 关闭模态窗口
@@ -124,34 +122,15 @@ const closeModal = () => {
 
 // 确认选择
 const confirmSelection = () => {
-  if (selectedPublisher.value && selectedGrade.value) {
-    emit('confirm', {
-      publisher: selectedPublisher.value,
-      grade: selectedGrade.value
-    })
-  }
-}
-
-// 从缓存加载之前的选择
-const loadCachedSelections = () => {
-  const cachedPublisher = localStorage.getItem('selectedPublisher')
-  const cachedGrade = localStorage.getItem('selectedGrade')
-  
-  if (cachedPublisher) {
-    try {
-      selectedPublisher.value = JSON.parse(cachedPublisher)
-    } catch (e) {
-      console.error('Failed to parse cached publisher:', e)
-    }
-  }
-  
-  if (cachedGrade) {
-    selectedGrade.value = cachedGrade
+  if (selectedUnit.value) {
+    emit('confirm', selectedUnit.value)
   }
 }
 
 onMounted(() => {
-  loadCachedSelections()
+  loadAvailableUnits()
+  // 设置当前单元为默认选择
+  selectedUnit.value = props.currentUnit || '1'
 })
 </script>
 
@@ -170,8 +149,8 @@ onMounted(() => {
 }
 
 .modal-content {
-  width: 60vw;
-  height: 80vh;
+  width: 50vw;
+  height: 60vh;
   background-color: #FFFFFF;
   border-radius: 15px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
@@ -236,20 +215,13 @@ onMounted(() => {
   margin-bottom: 15px;
 }
 
-.publisher-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 12px;
-}
-
-.grade-grid {
+.unit-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   gap: 12px;
 }
 
-.publisher-btn,
-.grade-btn {
+.unit-btn {
   padding: 12px 16px;
   border: 2px solid #E5E5E5;
   border-radius: 8px;
@@ -263,16 +235,14 @@ onMounted(() => {
   text-align: center;
 }
 
-.publisher-btn:hover,
-.grade-btn:hover {
+.unit-btn:hover {
   border-color: #F3843F;
   color: #F3843F;
   transform: translateY(-2px);
   box-shadow: 0 4px 8px rgba(243, 132, 63, 0.2);
 }
 
-.publisher-btn.active,
-.grade-btn.active {
+.unit-btn.active {
   border-color: #F3843F;
   background-color: #F3843F;
   color: #FFFFFF;
@@ -330,7 +300,7 @@ onMounted(() => {
 @media (max-width: 960px) {
   .modal-content {
     width: 90vw;
-    height: 85vh;
+    height: 70vh;
   }
   
   .modal-header {
@@ -345,11 +315,7 @@ onMounted(() => {
     padding: 20px;
   }
   
-  .publisher-grid {
-    grid-template-columns: 1fr;
-  }
-  
-  .grade-grid {
+  .unit-grid {
     grid-template-columns: repeat(2, 1fr);
   }
   

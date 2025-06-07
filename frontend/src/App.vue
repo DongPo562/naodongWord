@@ -25,7 +25,8 @@
       </div>
       <div class="memoryContainer">
         <div class="versionContainer">
-          <span class="version-text">{{ versionText }}</span>
+          <span class="version-text">{{ publisherGradeText }}</span>
+          <span class="unit-text" @click="showUnitChoosePage">{{ unitText }}</span>
         </div>
         <div class="wordContainer">
           <span class="word-text">{{ currentWord?.word || 'eraser' }}</span>
@@ -61,12 +62,22 @@
     :word-count="currentUnitContent.length"
     @close="closeCongratulationModal"
   />
+  
+  <!-- 单元选择模态窗口 -->
+  <UnitChoosePage 
+    v-if="isUnitModalVisible" 
+    :textbook-selection="selectedTextbook"
+    :current-unit="currentUnit"
+    @close="closeUnitModal" 
+    @confirm="handleUnitConfirm"
+  />
 </template>
 
 <script setup lang="ts">
 import { ref, computed } from 'vue'
 import TextbookChoosePage from './components/TextbookChoosePage.vue'
 import CompleteUnitLearn from './components/CompleteUnitLearn.vue'
+import UnitChoosePage from './components/UnitChoosePage.vue'
 
 // 定义单词类型
 interface Word {
@@ -80,9 +91,11 @@ interface Word {
 // 响应式数据
 const isTextbookModalVisible = ref(false)
 const isCongratulationModalVisible = ref(false)
+const isUnitModalVisible = ref(false)
 const currentUnitContent = ref<Word[]>([])
 const currentWordIndex = ref(0)
 const selectedTextbook = ref<{ publisher: any, grade: string } | null>(null)
+const currentUnit = ref<string>('1')
 
 // 计算当前单词
 const currentWord = computed(() => {
@@ -92,14 +105,24 @@ const currentWord = computed(() => {
   return null
 })
 
-// 计算版本显示文本
-const versionText = computed(() => {
+// 计算出版社和年级显示文本
+const publisherGradeText = computed(() => {
   if (selectedTextbook.value) {
     const publisherName = selectedTextbook.value.publisher.name
     const grade = selectedTextbook.value.grade
-    return `${publisherName}${grade} Unit1`
+    return `${publisherName}${grade}`
   }
-  return '人教版三年级下 Unit5'
+  return '人教版三年级下'
+})
+
+// 计算单元显示文本
+const unitText = computed(() => {
+  return `Unit ${currentUnit.value}`
+})
+
+// 计算完整版本显示文本（用于其他组件）
+const versionText = computed(() => {
+  return `${publisherGradeText.value} ${unitText.value}`
 })
 
 // 计算学习进度
@@ -111,7 +134,7 @@ const progressPercentage = computed(() => {
 })
 
 // 加载单词数据
-const loadWordsData = async () => {
+const loadWordsData = async (unit: string = '1') => {
   try {
     // 加载基础单词数据
     const wordsResponse = await fetch('/src/data/words/words1-100.json')
@@ -124,15 +147,17 @@ const loadWordsData = async () => {
       const vocabularyResponse = await fetch(vocabularyPath)
       const vocabularyData = await vocabularyResponse.json()
       
-      // 获取Unit 1的单词ID列表
-      const unit1WordIds = vocabularyData.units['Unit 1'] || []
+      // 获取指定单元的单词ID列表
+      const unitKey = `Unit ${unit}`
+      const unitWordIds = vocabularyData.units[unitKey] || []
       
       // 根据ID查找对应的单词
-      currentUnitContent.value = unit1WordIds.map((id: string) => {
+      currentUnitContent.value = unitWordIds.map((id: string) => {
         return wordsData.find(word => word.wordID === id)
       }).filter(Boolean)
       
       currentWordIndex.value = 0
+      currentUnit.value = unit
     }
   } catch (error) {
     console.error('加载单词数据失败:', error)
@@ -154,7 +179,24 @@ const handleTextbookConfirm = async (selection: { publisher: any, grade: string 
   console.log('选择的教材:', selection)
   selectedTextbook.value = selection
   isTextbookModalVisible.value = false
-  await loadWordsData()
+  await loadWordsData(currentUnit.value)
+}
+
+// 显示单元选择页面
+const showUnitChoosePage = () => {
+  isUnitModalVisible.value = true
+}
+
+// 关闭单元选择模态窗口
+const closeUnitModal = () => {
+  isUnitModalVisible.value = false
+}
+
+// 处理单元选择确认
+const handleUnitConfirm = async (unit: string) => {
+  console.log('选择的单元:', unit)
+  isUnitModalVisible.value = false
+  await loadWordsData(unit)
 }
 
 // 上一个单词
@@ -324,6 +366,24 @@ html, body {
   margin-right: 10px;
 }
 
+.unit-text {
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 700;
+  color: #4A90E2;
+  text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 4px 8px;
+  border-radius: 6px;
+}
+
+.unit-text:hover {
+  color: #357ABD;
+  background-color: rgba(74, 144, 226, 0.1);
+  transform: translateY(-1px);
+}
+
 .wordContainer {
   display: flex;
   justify-content: center;
@@ -331,12 +391,13 @@ html, body {
 }
 
 .word-text {
-  font-family: 'Inknut Antiqua', serif;
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
   font-size: 10vh;
-  font-weight: 400;
+  font-weight: 450;
   color: #000000;
-  letter-spacing: 0.9vw;
-  margin-top:8vh;
+  letter-spacing: 0.8vw;
+  margin-top:16vh;
 }
 
 .progressContainer {
