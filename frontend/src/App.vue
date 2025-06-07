@@ -137,7 +137,7 @@ const progressPercentage = computed(() => {
 const loadWordsData = async (unit: string = '1') => {
   try {
     // 加载基础单词数据
-    const wordsResponse = await fetch('/src/data/words/words1-100.json')
+    const wordsResponse = await fetch('/src/data/words/words1.json')
     const wordsData: Word[] = await wordsResponse.json()
     
     if (selectedTextbook.value) {
