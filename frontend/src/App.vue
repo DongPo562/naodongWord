@@ -31,6 +31,12 @@
         <div class="wordContainer">
           <span class="word-text">{{ currentWord?.word || 'eraser' }}</span>
         </div>
+        <div class="definitionContainer">
+            <div class="phonetic-definition-wrapper">
+                <span class="phonetic-text">{{ currentWord?.phoneticUS || '/ɪˈreɪzər/' }}</span>
+                <span class="definition-text">{{ currentWord?.definition || '橡皮擦' }}</span>
+            </div>
+        </div>
 
         <div class="associationContainer">
           <!-- 字母联想区域 -->
@@ -405,7 +411,7 @@ html, body {
 .wordContainer {
   display: flex;
   justify-content: center;
-  height: 30vh;
+  height: 26vh;
 }
 
 .word-text {
@@ -415,7 +421,40 @@ html, body {
   font-weight: 450;
   color: #000000;
   letter-spacing: 0.8vw;
-  margin-top:16vh;
+  margin-top:14vh;
+}
+
+.definitionContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 10px 0;
+}
+
+.phonetic-definition-wrapper {
+  display: inline-flex;
+  align-items: center;
+  gap: 15px;
+  padding: 6px 16px;
+  background-color: rgba(74, 144, 226, 0.1);
+  border-radius: 6px;
+  width: auto;
+  min-width: fit-content;
+}
+
+.phonetic-text {
+  font-family: "Times New Roman", serif;
+  font-size: 19px;
+  font-weight: 400;
+  color: #4A90E2;
+}
+
+.definition-text {
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 400;
+  color: #3bb787;
+  line-height: 1.4;
 }
 
 .progressContainer {
