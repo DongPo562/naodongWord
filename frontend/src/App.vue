@@ -415,8 +415,9 @@ html, body {
 }
 
 .word-text {
-  font-family: "Roboto", sans-serif;
+  font-family: "Playpen Sans Arabic", cursive;
   font-optical-sizing: auto;
+  font-style: normal;
   font-size: 10vh;
   font-weight: 450;
   color: #000000;
