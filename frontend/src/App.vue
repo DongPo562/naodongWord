@@ -422,7 +422,7 @@ html, body {
   font-weight: 450;
   color: #000000;
   letter-spacing: 0.8vw;
-  margin-top:14vh;
+  margin-top:12vh;
 }
 
 .definitionContainer {
