@@ -375,7 +375,7 @@ html, body {
 
 .version-text {
   font-family: Inter;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
   color: #525252;
   text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
@@ -384,7 +384,7 @@ html, body {
 
 .unit-text {
   font-family: Inter;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 700;
   color: #4A90E2;
   background-color: rgba(74, 144, 226, 0.2);

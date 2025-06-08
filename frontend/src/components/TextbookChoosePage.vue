@@ -256,7 +256,7 @@ onMounted(() => {
   background-color: #FFFFFF;
   color: #666666;
   font-family: Inter;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 400;
   cursor: pointer;
   transition: all 0.3s ease;
