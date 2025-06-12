@@ -415,7 +415,7 @@ html, body {
 }
 
 .word-text {
-  font-family: "Playpen Sans Arabic", cursive;
+  font-family: "Andika", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
   font-size: 10vh;
