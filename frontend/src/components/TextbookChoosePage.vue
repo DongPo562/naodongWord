@@ -56,30 +56,31 @@ import { ref, computed, onMounted } from 'vue'
 interface Publisher {
   id: string
   name: string
-  hasGrade2: boolean
+  hasGrade1: boolean
 }
 
 const emit = defineEmits(['close', 'confirm'])
 
 // 出版社列表
 const publishers = ref<Publisher[]>([
-  { id: 'bsd', name: '北师大版', hasGrade2: false },
-  { id: 'cqu', name: '重庆大学版', hasGrade2: false },
-  { id: 'fj', name: '闽教版', hasGrade2: false },
-  { id: 'gd', name: '粤教粤人版', hasGrade2: false },
-  { id: 'hebei', name: '冀教版（一年级起点）', hasGrade2: true },
-  { id: 'hunan', name: '湘少版', hasGrade2: false },
-  { id: 'eec', name: '教科版 (EEC学院)', hasGrade2: false },
-  { id: 'kj', name: '教科版 (主编：龚亚夫&鲁宗干)', hasGrade2: false },
-  { id: 'jieli', name: '接力版', hasGrade2: false },
-  { id: 'kepu', name: '科普版', hasGrade2: false },
-  { id: 'liaoning', name: '辽宁师大版', hasGrade2: false },
-  { id: 'tsinghua', name: '清华大学版', hasGrade2: true },
-  { id: 'rjynjqd', name: '人教版（一年级起点）', hasGrade2: true }
+  { id: 'bsd', name: '北师大版', hasGrade1: false },
+  { id: 'cqu', name: '重庆大学版', hasGrade1: false },
+  { id: 'fj', name: '闽教版', hasGrade1: false },
+  { id: 'gd', name: '粤教粤人版', hasGrade1: false },
+  { id: 'hebei', name: '冀教版（一年级起点）', hasGrade1: true },
+  { id: 'hunan', name: '湘少版', hasGrade1: false },
+  { id: 'eec', name: '教科版 (EEC学院)', hasGrade1: false },
+  { id: 'kj', name: '教科版 (主编：龚亚夫&鲁宗干)', hasGrade1: false },
+  { id: 'jieli', name: '接力版', hasGrade1: false },
+  { id: 'kepu', name: '科普版', hasGrade1: false },
+  { id: 'liaoning', name: '辽宁师大版', hasGrade1: false },
+  { id: 'tsinghua', name: '清华大学版', hasGrade1: true },
+  { id: 'rjynjqd', name: '人教版（一年级起点）', hasGrade1: true }
 ])
 
 // 所有年级选项
 const allGrades = [
+  '一年级上', '一年级下',
   '二年级上', '二年级下',
   '三年级上', '三年级下',
   '四年级上', '四年级下',
@@ -93,10 +94,10 @@ const selectedGrade = ref<string>('')
 const availableGrades = computed(() => {
   if (!selectedPublisher.value) return []
   
-  if (selectedPublisher.value.hasGrade2) {
+  if (selectedPublisher.value.hasGrade1) {
     return allGrades
   } else {
-    return allGrades.filter(grade => !grade.includes('二年级'))
+    return allGrades.filter(grade => !grade.includes('一年级') && !grade.includes('二年级'))
   }
 })
 

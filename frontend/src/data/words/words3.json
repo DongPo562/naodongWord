@@ -1,0 +1,51 @@
+[
+    {
+      "wordID": "201",
+      "word": "Monday",
+      "phoneticUK": "/ˈmʌndeɪ/",
+      "phoneticUS": "/ˈmʌndeɪ/",
+      "definition": "星期一"
+    },
+    {
+      "wordID": "202",
+      "word": "Tuesday",
+      "phoneticUK": "/ˈtjuːzdeɪ/",
+      "phoneticUS": "/ˈtuːzdeɪ/",
+      "definition": "星期二"
+    },
+    {
+      "wordID": "203",
+      "word": "Wednesday",
+      "phoneticUK": "/ˈwenzdeɪ/",
+      "phoneticUS": "/ˈwenzdeɪ/",
+      "definition": "星期三"
+    },
+    {
+      "wordID": "204",
+      "word": "Thursday",
+      "phoneticUK": "/ˈθɜːzdeɪ/",
+      "phoneticUS": "/ˈθɜːrzdeɪ/",
+      "definition": "星期四"
+    },
+    {
+      "wordID": "205",
+      "word": "Friday",
+      "phoneticUK": "/ˈfraɪdeɪ/",
+      "phoneticUS": "/ˈfraɪdeɪ/",
+      "definition": "星期五"
+    },
+    {
+      "wordID": "206",
+      "word": "Saturday",
+      "phoneticUK": "/ˈsætədeɪ/",
+      "phoneticUS": "/ˈsætərdeɪ/",
+      "definition": "星期六"
+    },
+    {
+      "wordID": "207",
+      "word": "today",
+      "phoneticUK": "/təˈdeɪ/",
+      "phoneticUS": "/təˈdeɪ/",
+      "definition": "今天"
+    }
+  ]

@@ -1,702 +1,702 @@
 [
   {
     "wordID": "1",
+    "word": "book",
+    "phoneticUK": "/bʊk/",
+    "phoneticUS": "/bʊk/",
+    "definition": "书，书本"
+  },
+  {
+    "wordID": "2",
+    "word": "ruler",
+    "phoneticUK": "/ˈruːlə(r)/",
+    "phoneticUS": "/ˈruːlər/",
+    "definition": "尺子"
+  },
+  {
+    "wordID": "3",
+    "word": "pencil",
+    "phoneticUK": "/ˈpensəl/",
+    "phoneticUS": "/ˈpensəl/",
+    "definition": "铅笔"
+  },
+  {
+    "wordID": "4",
+    "word": "schoolbag",
+    "phoneticUK": "/ˈskuːlbæɡ/",
+    "phoneticUS": "/ˈskuːlbæɡ/",
+    "definition": "书包"
+  },
+  {
+    "wordID": "5",
+    "word": "teacher",
+    "phoneticUK": "/ˈtiːtʃə(r)/",
+    "phoneticUS": "/ˈtiːtʃər/",
+    "definition": "教师"
+  },
+  {
+    "wordID": "6",
+    "word": "I",
+    "phoneticUK": "/aɪ/",
+    "phoneticUS": "/aɪ/",
+    "definition": "我"
+  },
+  {
+    "wordID": "7",
+    "word": "have",
+    "phoneticUK": "/hæv/",
+    "phoneticUS": "/hæv/",
+    "definition": "有"
+  },
+  {
+    "wordID": "8",
+    "word": "a",
+    "phoneticUK": "/ə/",
+    "phoneticUS": "/ə/",
+    "definition": "一（个）"
+  },
+  {
+    "wordID": "9",
+    "word": "an",
+    "phoneticUK": "/ən/",
+    "phoneticUS": "/ən/",
+    "definition": "一（个）"
+  },
+  {
+    "wordID": "10",
+    "word": "face",
+    "phoneticUK": "/feɪs/",
+    "phoneticUS": "/feɪs/",
+    "definition": "脸"
+  },
+  {
+    "wordID": "11",
+    "word": "ear",
+    "phoneticUK": "/ɪə(r)/",
+    "phoneticUS": "/ɪr/",
+    "definition": "耳朵"
+  },
+  {
+    "wordID": "12",
+    "word": "eye",
+    "phoneticUK": "/aɪ/",
+    "phoneticUS": "/aɪ/",
+    "definition": "眼睛"
+  },
+  {
+    "wordID": "13",
+    "word": "nose",
+    "phoneticUK": "/nəʊz/",
+    "phoneticUS": "/noʊz/",
+    "definition": "鼻子"
+  },
+  {
+    "wordID": "14",
+    "word": "mouth",
+    "phoneticUK": "/maʊθ/",
+    "phoneticUS": "/maʊθ/",
+    "definition": "嘴巴"
+  },
+  {
+    "wordID": "15",
+    "word": "this",
+    "phoneticUK": "/ðɪs/",
+    "phoneticUS": "/ðɪs/",
+    "definition": "这（个）"
+  },
+  {
+    "wordID": "16",
+    "word": "is",
+    "phoneticUK": "/ɪz/",
+    "phoneticUS": "/ɪz/",
+    "definition": "是"
+  },
+  {
+    "wordID": "17",
+    "word": "my",
+    "phoneticUK": "/maɪ/",
+    "phoneticUS": "/maɪ/",
+    "definition": "我的"
+  },
+  {
+    "wordID": "18",
+    "word": "dog",
+    "phoneticUK": "/dɒɡ/",
+    "phoneticUS": "/dɔːɡ/",
+    "definition": "狗"
+  },
+  {
+    "wordID": "19",
+    "word": "bird",
+    "phoneticUK": "/bɜːd/",
+    "phoneticUS": "/bɜːrd/",
+    "definition": "鸟"
+  },
+  {
+    "wordID": "20",
+    "word": "tiger",
+    "phoneticUK": "/ˈtaɪɡə(r)/",
+    "phoneticUS": "/ˈtaɪɡər/",
+    "definition": "老虎"
+  },
+  {
+    "wordID": "21",
+    "word": "monkey",
+    "phoneticUK": "/ˈmʌŋki/",
+    "phoneticUS": "/ˈmʌŋki/",
+    "definition": "猴子"
+  },
+  {
+    "wordID": "22",
+    "word": "cat",
+    "phoneticUK": "/kæt/",
+    "phoneticUS": "/kæt/",
+    "definition": "猫"
+  },
+  {
+    "wordID": "23",
+    "word": "what",
+    "phoneticUK": "/wɒt/",
+    "phoneticUS": "/wʌt/",
+    "definition": "什么"
+  },
+  {
+    "wordID": "24",
+    "word": "it",
+    "phoneticUK": "/ɪt/",
+    "phoneticUS": "/ɪt/",
+    "definition": "它"
+  },
+  {
+    "wordID": "25",
+    "word": "one",
+    "phoneticUK": "/wʌn/",
+    "phoneticUS": "/wʌn/",
+    "definition": "一"
+  },
+  {
+    "wordID": "26",
+    "word": "two",
+    "phoneticUK": "/tuː/",
+    "phoneticUS": "/tuː/",
+    "definition": "二"
+  },
+  {
+    "wordID": "27",
+    "word": "three",
+    "phoneticUK": "/θriː/",
+    "phoneticUS": "/θriː/",
+    "definition": "三"
+  },
+  {
+    "wordID": "28",
+    "word": "four",
+    "phoneticUK": "/fɔː(r)/",
+    "phoneticUS": "/fɔːr/",
+    "definition": "四"
+  },
+  {
+    "wordID": "29",
+    "word": "five",
+    "phoneticUK": "/faɪv/",
+    "phoneticUS": "/faɪv/",
+    "definition": "五"
+  },
+  {
+    "wordID": "30",
+    "word": "six",
+    "phoneticUK": "/sɪks/",
+    "phoneticUS": "/sɪks/",
+    "definition": "六"
+  },
+  {
+    "wordID": "31",
+    "word": "seven",
+    "phoneticUK": "/ˈsevən/",
+    "phoneticUS": "/ˈsevən/",
+    "definition": "七"
+  },
+  {
+    "wordID": "32",
+    "word": "eight",
+    "phoneticUK": "/eɪt/",
+    "phoneticUS": "/eɪt/",
+    "definition": "八"
+  },
+  {
+    "wordID": "33",
+    "word": "nine",
+    "phoneticUK": "/naɪn/",
+    "phoneticUS": "/naɪn/",
+    "definition": "九"
+  },
+  {
+    "wordID": "34",
+    "word": "ten",
+    "phoneticUK": "/ten/",
+    "phoneticUS": "/ten/",
+    "definition": "十"
+  },
+  {
+    "wordID": "35",
+    "word": "how",
+    "phoneticUK": "/haʊ/",
+    "phoneticUS": "/haʊ/",
+    "definition": "多少"
+  },
+  {
+    "wordID": "36",
+    "word": "many",
+    "phoneticUK": "/ˈmeni/",
+    "phoneticUS": "/ˈmeni/",
+    "definition": "多的，许多的"
+  },
+  {
+    "wordID": "37",
+    "word": "are",
+    "phoneticUK": "/ɑː(r)/",
+    "phoneticUS": "/ɑːr/",
+    "definition": "是"
+  },
+  {
+    "wordID": "38",
+    "word": "there",
+    "phoneticUK": "/ðeə(r)/",
+    "phoneticUS": "/ðer/",
+    "definition": "（代替主语）"
+  },
+  {
+    "wordID": "39",
+    "word": "black",
+    "phoneticUK": "/blæk/",
+    "phoneticUS": "/blæk/",
+    "definition": "黑色；黑色的"
+  },
+  {
+    "wordID": "40",
+    "word": "yellow",
+    "phoneticUK": "/ˈjeləʊ/",
+    "phoneticUS": "/ˈjeloʊ/",
+    "definition": "黄色；黄色的"
+  },
+  {
+    "wordID": "41",
+    "word": "blue",
+    "phoneticUK": "/bluː/",
+    "phoneticUS": "/bluː/",
+    "definition": "蓝色；蓝色的"
+  },
+  {
+    "wordID": "42",
+    "word": "red",
+    "phoneticUK": "/red/",
+    "phoneticUS": "/red/",
+    "definition": "红色；红色的"
+  },
+  {
+    "wordID": "43",
+    "word": "green",
+    "phoneticUK": "/ɡriːn/",
+    "phoneticUS": "/ɡriːn/",
+    "definition": "绿色；绿色的"
+  },
+  {
+    "wordID": "44",
+    "word": "colour",
+    "phoneticUK": "/ˈkʌlə(r)/",
+    "phoneticUS": "/ˈkʌlər/",
+    "definition": "颜色"
+  },
+  {
+    "wordID": "45",
+    "word": "apple",
+    "phoneticUK": "/ˈæpəl/",
+    "phoneticUS": "/ˈæpəl/",
+    "definition": "苹果"
+  },
+  {
+    "wordID": "46",
+    "word": "pear",
+    "phoneticUK": "/peə(r)/",
+    "phoneticUS": "/per/",
+    "definition": "梨"
+  },
+  {
+    "wordID": "47",
+    "word": "banana",
+    "phoneticUK": "/bəˈnɑːnə/",
+    "phoneticUS": "/bəˈnænə/",
+    "definition": "香蕉"
+  },
+  {
+    "wordID": "48",
+    "word": "orange",
+    "phoneticUK": "/ˈɒrɪndʒ/",
+    "phoneticUS": "/ˈɔːrɪndʒ/",
+    "definition": "柑橘；橙"
+  },
+  {
+    "wordID": "49",
+    "word": "do",
+    "phoneticUK": "/duː/",
+    "phoneticUS": "/duː/",
+    "definition": "（助动词）"
+  },
+  {
+    "wordID": "50",
+    "word": "you",
+    "phoneticUK": "/juː/",
+    "phoneticUS": "/juː/",
+    "definition": "你；你们"
+  },
+  {
+    "wordID": "51",
+    "word": "like",
+    "phoneticUK": "/laɪk/",
+    "phoneticUS": "/laɪk/",
+    "definition": "喜欢，喜爱"
+  },
+  {
+    "wordID": "52",
+    "word": "yes",
+    "phoneticUK": "/jes/",
+    "phoneticUS": "/jes/",
+    "definition": "是，是的"
+  },
+  {
+    "wordID": "53",
+    "word": "no",
+    "phoneticUK": "/nəʊ/",
+    "phoneticUS": "/noʊ/",
+    "definition": "不，不是"
+  },
+  {
+    "wordID": "54",
+    "word": "chair",
+    "phoneticUK": "/tʃeə(r)/",
+    "phoneticUS": "/tʃer/",
+    "definition": "椅子"
+  },
+  {
+    "wordID": "55",
+    "word": "desk",
+    "phoneticUK": "/desk/",
+    "phoneticUS": "/desk/",
+    "definition": "书桌，写字台"
+  },
+  {
+    "wordID": "56",
+    "word": "blackboard",
+    "phoneticUK": "/ˈblækbɔːd/",
+    "phoneticUS": "/ˈblækbɔːrd/",
+    "definition": "黑板"
+  },
+  {
+    "wordID": "57",
+    "word": "on",
+    "phoneticUK": "/ɒn/",
+    "phoneticUS": "/ɑːn/",
+    "definition": "在……上"
+  },
+  {
+    "wordID": "58",
+    "word": "under",
+    "phoneticUK": "/ˈʌndə(r)/",
+    "phoneticUS": "/ˈʌndər/",
+    "definition": "在……下面；在……下方"
+  },
+  {
+    "wordID": "59",
+    "word": "in",
+    "phoneticUK": "/ɪn/",
+    "phoneticUS": "/ɪn/",
+    "definition": "在……里面"
+  },
+  {
+    "wordID": "60",
+    "word": "where",
+    "phoneticUK": "/weə(r)/",
+    "phoneticUS": "/wer/",
+    "definition": "在哪里"
+  },
+  {
+    "wordID": "61",
+    "word": "the",
+    "phoneticUK": "/ðə/",
+    "phoneticUS": "/ðə/",
+    "definition": "放在名词前，特指人、事或物"
+  },
+  {
+    "wordID": "62",
+    "word": "light",
+    "phoneticUK": "/laɪt/",
+    "phoneticUS": "/laɪt/",
+    "definition": "灯"
+  },
+  {
+    "wordID": "63",
+    "word": "bed",
+    "phoneticUK": "/bed/",
+    "phoneticUS": "/bed/",
+    "definition": "床"
+  },
+  {
+    "wordID": "64",
+    "word": "door",
+    "phoneticUK": "/dɔː(r)/",
+    "phoneticUS": "/dɔːr/",
+    "definition": "门；出入口"
+  },
+  {
+    "wordID": "65",
+    "word": "box",
+    "phoneticUK": "/bɒks/",
+    "phoneticUS": "/bɑːks/",
+    "definition": "箱子；盒子"
+  },
+  {
+    "wordID": "66",
+    "word": "near",
+    "phoneticUK": "/nɪə(r)/",
+    "phoneticUS": "/nɪr/",
+    "definition": "靠近，接近"
+  },
+  {
+    "wordID": "67",
+    "word": "behind",
+    "phoneticUK": "/bɪˈhaɪnd/",
+    "phoneticUS": "/bɪˈhaɪnd/",
+    "definition": "在……背后"
+  },
+  {
+    "wordID": "68",
+    "word": "plane",
+    "phoneticUK": "/pleɪn/",
+    "phoneticUS": "/pleɪn/",
+    "definition": "飞机"
+  },
+  {
+    "wordID": "69",
+    "word": "ball",
+    "phoneticUK": "/bɔːl/",
+    "phoneticUS": "/bɔːl/",
+    "definition": "球"
+  },
+  {
+    "wordID": "70",
+    "word": "doll",
+    "phoneticUK": "/dɒl/",
+    "phoneticUS": "/dɑːl/",
+    "definition": "玩偶，玩具娃娃"
+  },
+  {
+    "wordID": "71",
+    "word": "train",
+    "phoneticUK": "/treɪn/",
+    "phoneticUS": "/treɪn/",
+    "definition": "列车，火车"
+  },
+  {
+    "wordID": "72",
+    "word": "car",
+    "phoneticUK": "/kɑː(r)/",
+    "phoneticUS": "/kɑːr/",
+    "definition": "小汽车，轿车"
+  },
+  {
+    "wordID": "73",
+    "word": "bear",
+    "phoneticUK": "/beə(r)/",
+    "phoneticUS": "/ber/",
+    "definition": "玩具熊；熊"
+  },
+  {
+    "wordID": "74",
+    "word": "can",
+    "phoneticUK": "/kæn/",
+    "phoneticUS": "/kæn/",
+    "definition": "可以；能够"
+  },
+  {
+    "wordID": "75",
+    "word": "sure",
+    "phoneticUK": "/ʃʊə(r)/",
+    "phoneticUS": "/ʃʊr/",
+    "definition": "当然"
+  },
+  {
+    "wordID": "76",
+    "word": "sorry",
+    "phoneticUK": "/ˈsɒri/",
+    "phoneticUS": "/ˈsɑːri/",
+    "definition": "对不起，抱歉"
+  },
+  {
+    "wordID": "77",
+    "word": "rice",
+    "phoneticUK": "/raɪs/",
+    "phoneticUS": "/raɪs/",
+    "definition": "米饭；米"
+  },
+  {
+    "wordID": "78",
+    "word": "noodles",
+    "phoneticUK": "/ˈnuːdəlz/",
+    "phoneticUS": "/ˈnuːdəlz/",
+    "definition": "面条"
+  },
+  {
+    "wordID": "79",
+    "word": "vegetable",
+    "phoneticUK": "/ˈvedʒtəbəl/",
+    "phoneticUS": "/ˈvedʒtəbəl/",
+    "definition": "蔬菜"
+  },
+  {
+    "wordID": "80",
+    "word": "fish",
+    "phoneticUK": "/fɪʃ/",
+    "phoneticUS": "/fɪʃ/",
+    "definition": "鱼肉；鱼"
+  },
+  {
+    "wordID": "81",
+    "word": "chicken",
+    "phoneticUK": "/ˈtʃɪkɪn/",
+    "phoneticUS": "/ˈtʃɪkɪn/",
+    "definition": "鸡肉；鸡"
+  },
+  {
+    "wordID": "82",
+    "word": "egg",
+    "phoneticUK": "/eɡ/",
+    "phoneticUS": "/eɡ/",
+    "definition": "鸡蛋"
+  },
+  {
+    "wordID": "83",
+    "word": "hungry",
+    "phoneticUK": "/ˈhʌŋɡri/",
+    "phoneticUS": "/ˈhʌŋɡri/",
+    "definition": "饥饿的"
+  },
+  {
+    "wordID": "84",
+    "word": "want",
+    "phoneticUK": "/wɒnt/",
+    "phoneticUS": "/wɑːnt/",
+    "definition": "要；想要"
+  },
+  {
+    "wordID": "85",
+    "word": "and",
+    "phoneticUK": "/ænd/",
+    "phoneticUS": "/ænd/",
+    "definition": "和"
+  },
+  {
+    "wordID": "86",
+    "word": "juice",
+    "phoneticUK": "/dʒuːs/",
+    "phoneticUS": "/dʒuːs/",
+    "definition": "果汁；蔬菜汁"
+  },
+  {
+    "wordID": "87",
+    "word": "tea",
+    "phoneticUK": "/tiː/",
+    "phoneticUS": "/tiː/",
+    "definition": "茶；茶叶"
+  },
+  {
+    "wordID": "88",
+    "word": "milk",
+    "phoneticUK": "/mɪlk/",
+    "phoneticUS": "/mɪlk/",
+    "definition": "奶；牛奶"
+  },
+  {
+    "wordID": "89",
+    "word": "water",
+    "phoneticUK": "/ˈwɔːtə(r)/",
+    "phoneticUS": "/ˈwɔːtər/",
+    "definition": "水"
+  },
+  {
+    "wordID": "90",
+    "word": "thirsty",
+    "phoneticUK": "/ˈθɜːsti/",
+    "phoneticUS": "/ˈθɜːrsti/",
+    "definition": "口渴的"
+  },
+  {
+    "wordID": "91",
+    "word": "thanks",
+    "phoneticUK": "/θæŋks/",
+    "phoneticUS": "/θæŋks/",
+    "definition": "感谢"
+  },
+  {
+    "wordID": "92",
+    "word": "shirt",
+    "phoneticUK": "/ʃɜːt/",
+    "phoneticUS": "/ʃɜːrt/",
+    "definition": "衬衫"
+  },
+  {
+    "wordID": "93",
+    "word": "T-shirt",
+    "phoneticUK": "/ˈtiː ʃɜːt/",
+    "phoneticUS": "/ˈtiː ʃɜːrt/",
+    "definition": "T恤衫；短袖圆领汗衫"
+  },
+  {
+    "wordID": "94",
+    "word": "skirt",
+    "phoneticUK": "/skɜːt/",
+    "phoneticUS": "/skɜːrt/",
+    "definition": "裙子"
+  },
+  {
+    "wordID": "95",
+    "word": "dress",
+    "phoneticUK": "/dres/",
+    "phoneticUS": "/dres/",
+    "definition": "连衣裙；套裙"
+  },
+  {
+    "wordID": "96",
+    "word": "socks",
+    "phoneticUK": "/sɒks/",
+    "phoneticUS": "/sɑːks/",
+    "definition": "短袜"
+  },
+  {
+    "wordID": "97",
+    "word": "shorts",
+    "phoneticUK": "/ʃɔːts/",
+    "phoneticUS": "/ʃɔːrts/",
+    "definition": "短裤"
+  },
+  {
+    "wordID": "98",
+    "word": "your",
+    "phoneticUK": "/jɔː(r)/",
+    "phoneticUS": "/jʊr/",
+    "definition": "你的；你们的"
+  },
+  {
+    "wordID": "99",
     "word": "father",
     "phoneticUK": "/ˈfɑːðə(r)/",
     "phoneticUS": "/ˈfɑðər/",
     "definition": "父亲"
   },
   {
-    "wordID": "2",
+    "wordID": "100",
     "word": "mother",
     "phoneticUK": "/ˈmʌðə(r)/",
     "phoneticUS": "/ˈmʌðər/",
     "definition": "母亲"
-  },
-  {
-    "wordID": "3",
-    "word": "brother",
-    "phoneticUK": "/ˈbrʌðə(r)/",
-    "phoneticUS": "/ˈbrʌðər/",
-    "definition": "兄弟"
-  },
-  {
-    "wordID": "4",
-    "word": "sister",
-    "phoneticUK": "/ˈsɪstə(r)/",
-    "phoneticUS": "/ˈsɪstər/",
-    "definition": "姐妹"
-  },
-  {
-    "wordID": "5",
-    "word": "grandmother",
-    "phoneticUK": "/ˈɡrænmʌðə(r)/",
-    "phoneticUS": "/ˈɡrænmʌðər/",
-    "definition": "祖母"
-  },
-  {
-    "wordID": "6",
-    "word": "grandfather",
-    "phoneticUK": "/ˈɡrænfɑːðə(r)/",
-    "phoneticUS": "/ˈɡrænfɑðər/",
-    "definition": "祖父"
-  },
-  {
-    "wordID": "7",
-    "word": "who",
-    "phoneticUK": "/huː/",
-    "phoneticUS": "/huː/",
-    "definition": "谁"
-  },
-  {
-    "wordID": "8",
-    "word": "he",
-    "phoneticUK": "/hiː/",
-    "phoneticUS": "/hiː/",
-    "definition": "他"
-  },
-  {
-    "wordID": "9",
-    "word": "she",
-    "phoneticUK": "/ʃiː/",
-    "phoneticUS": "/ʃi/",
-    "definition": "她"
-  },
-  {
-    "wordID": "10",
-    "word": "classmate",
-    "phoneticUK": "/ˈklɑːsmeɪt/",
-    "phoneticUS": "/ˈklæsmeɪt/",
-    "definition": "同学"
-  },
-  {
-    "wordID": "11",
-    "word": "friend",
-    "phoneticUK": "/frend/",
-    "phoneticUS": "/frend/",
-    "definition": "朋友"
-  },
-  {
-    "wordID": "12",
-    "word": "woman",
-    "phoneticUK": "/ˈwʊmən/",
-    "phoneticUS": "/ˈwʊmən/",
-    "definition": "女人"
-  },
-  {
-    "wordID": "13",
-    "word": "girl",
-    "phoneticUK": "/ɡɜːl/",
-    "phoneticUS": "/ɡɜːrl/",
-    "definition": "女孩"
-  },
-  {
-    "wordID": "14",
-    "word": "man",
-    "phoneticUK": "/mæn/",
-    "phoneticUS": "/mæn/",
-    "definition": "男人"
-  },
-  {
-    "wordID": "15",
-    "word": "boy",
-    "phoneticUK": "/bɔɪ/",
-    "phoneticUS": "/bɔɪ/",
-    "definition": "男孩"
-  },
-  {
-    "wordID": "16",
-    "word": "look",
-    "phoneticUK": "/lʊk/",
-    "phoneticUS": "/lʊk/",
-    "definition": "看"
-  },
-  {
-    "wordID": "17",
-    "word": "his",
-    "phoneticUK": "/hɪz/",
-    "phoneticUS": "/hɪz/",
-    "definition": "他的"
-  },
-  {
-    "wordID": "18",
-    "word": "name",
-    "phoneticUK": "/neɪm/",
-    "phoneticUS": "/neɪm/",
-    "definition": "名字"
-  },
-  {
-    "wordID": "19",
-    "word": "her",
-    "phoneticUK": "/hə(r)/",
-    "phoneticUS": "/hər/",
-    "definition": "她的"
-  },
-  {
-    "wordID": "20",
-    "word": "or",
-    "phoneticUK": "/ɔː(r)/",
-    "phoneticUS": "/ɔːr/",
-    "definition": "还是"
-  },
-  {
-    "wordID": "21",
-    "word": "big",
-    "phoneticUK": "/bɪɡ/",
-    "phoneticUS": "/bɪɡ/",
-    "definition": "大的"
-  },
-  {
-    "wordID": "22",
-    "word": "tall",
-    "phoneticUK": "/tɔːl/",
-    "phoneticUS": "/tɔːl/",
-    "definition": "高的"
-  },
-  {
-    "wordID": "23",
-    "word": "pretty",
-    "phoneticUK": "/ˈprɪti/",
-    "phoneticUS": "/ˈprɪti/",
-    "definition": "漂亮的, 可爱的"
-  },
-  {
-    "wordID": "24",
-    "word": "thin",
-    "phoneticUK": "/θɪn/",
-    "phoneticUS": "/θɪn/",
-    "definition": "瘦的"
-  },
-  {
-    "wordID": "25",
-    "word": "short",
-    "phoneticUK": "/ʃɔːt/",
-    "phoneticUS": "/ʃɔːrt/",
-    "definition": "矮的"
-  },
-  {
-    "wordID": "26",
-    "word": "handsome",
-    "phoneticUK": "/ˈhænsəm/",
-    "phoneticUS": "/ˈhænsəm/",
-    "definition": "漂亮的, 英俊的"
-  },
-  {
-    "wordID": "27",
-    "word": "new",
-    "phoneticUK": "/njuː/",
-    "phoneticUS": "/nuː/",
-    "definition": "新的"
-  },
-  {
-    "wordID": "28",
-    "word": "does",
-    "phoneticUK": "/dʌz/",
-    "phoneticUS": "/dʌz/",
-    "definition": "助动词"
-  },
-  {
-    "wordID": "29",
-    "word": "bookshop",
-    "phoneticUK": "/ˈbʊkʃɒp/",
-    "phoneticUS": "/ˈbʊkʃɑːp/",
-    "definition": "书店"
-  },
-  {
-    "wordID": "30",
-    "word": "zoo",
-    "phoneticUK": "/zuː/",
-    "phoneticUS": "/zuː/",
-    "definition": "动物园"
-  },
-  {
-    "wordID": "31",
-    "word": "school",
-    "phoneticUK": "/skuːl/",
-    "phoneticUS": "/skuːl/",
-    "definition": "学校"
-  },
-  {
-    "wordID": "32",
-    "word": "supermarket",
-    "phoneticUK": "/ˈsuːpəmɑːkɪt/",
-    "phoneticUS": "/ˈsuːpərmɑːrkɪt/",
-    "definition": "超市"
-  },
-  {
-    "wordID": "33",
-    "word": "park",
-    "phoneticUK": "/pɑːk/",
-    "phoneticUS": "/pɑːrk/",
-    "definition": "公园"
-  },
-  {
-    "wordID": "34",
-    "word": "hospital",
-    "phoneticUK": "/ˈhɒspɪtl/",
-    "phoneticUS": "/ˈhɑːspɪtl/",
-    "definition": "医院"
-  },
-  {
-    "wordID": "35",
-    "word": "go",
-    "phoneticUK": "/ɡəʊ/",
-    "phoneticUS": "/ɡoʊ/",
-    "definition": "去"
-  },
-  {
-    "wordID": "36",
-    "word": "to",
-    "phoneticUK": "/tuː/",
-    "phoneticUS": "/tuː/",
-    "definition": "向, 朝"
-  },
-  {
-    "wordID": "37",
-    "word": "grass",
-    "phoneticUK": "/ɡrɑːs/",
-    "phoneticUS": "/ɡræs/",
-    "definition": "草"
-  },
-  {
-    "wordID": "38",
-    "word": "tree",
-    "phoneticUK": "/triː/",
-    "phoneticUS": "/triː/",
-    "definition": "树"
-  },
-  {
-    "wordID": "39",
-    "word": "flower",
-    "phoneticUK": "/ˈflaʊə(r)/",
-    "phoneticUS": "/ˈflaʊər/",
-    "definition": "花"
-  },
-  {
-    "wordID": "40",
-    "word": "boat",
-    "phoneticUK": "/bəʊt/",
-    "phoneticUS": "/boʊt/",
-    "definition": "小船"
-  },
-  {
-    "wordID": "41",
-    "word": "lake",
-    "phoneticUK": "/leɪk/",
-    "phoneticUS": "/leɪk/",
-    "definition": "湖"
-  },
-  {
-    "wordID": "42",
-    "word": "hill",
-    "phoneticUK": "/hɪl/",
-    "phoneticUS": "/hɪl/",
-    "definition": "小山"
-  },
-  {
-    "wordID": "43",
-    "word": "Christmas",
-    "phoneticUK": "/ˈkrɪsməs/",
-    "phoneticUS": "/ˈkrɪsməs/",
-    "definition": "圣诞节"
-  },
-  {
-    "wordID": "44",
-    "word": "Father Christmas",
-    "phoneticUK": "",
-    "phoneticUS": "",
-    "definition": "圣诞老人"
-  },
-  {
-    "wordID": "45",
-    "word": "Christmas tree",
-    "phoneticUK": "",
-    "phoneticUS": "",
-    "definition": "圣诞树"
-  },
-  {
-    "wordID": "46",
-    "word": "card",
-    "phoneticUK": "/kɑːd/",
-    "phoneticUS": "/kɑːrd/",
-    "definition": "贺卡; 明信片"
-  },
-  {
-    "wordID": "47",
-    "word": "present",
-    "phoneticUK": "/ˈpreznt/",
-    "phoneticUS": "/ˈpreznt/",
-    "definition": "礼物"
-  },
-  {
-    "wordID": "48",
-    "word": "New Year",
-    "phoneticUK": "",
-    "phoneticUS": "",
-    "definition": "新年"
-  },
-  {
-    "wordID": "49",
-    "word": "merry",
-    "phoneticUK": "/ˈmeri/",
-    "phoneticUS": "/ˈmeri/",
-    "definition": "高兴的; 愉快的"
-  },
-  {
-    "wordID": "50",
-    "word": "too",
-    "phoneticUK": "/tuː/",
-    "phoneticUS": "/tuː/",
-    "definition": "也; 又"
-  },
-  {
-    "wordID": "51",
-    "word": "here",
-    "phoneticUK": "/hɪə(r)/",
-    "phoneticUS": "/hɪr/",
-    "definition": "这儿"
-  },
-  {
-    "wordID": "52",
-    "word": "for",
-    "phoneticUK": "/fə(r)/",
-    "phoneticUS": "/fər/",
-    "definition": "表示接受某事物或从某事物中获益的人"
-  },
-  {
-    "wordID": "53",
-    "word": "thank",
-    "phoneticUK": "/θæŋk/",
-    "phoneticUS": "/θæŋk/",
-    "definition": "谢谢"
-  },
-  {
-    "wordID": "54",
-    "word": "happy",
-    "phoneticUK": "/ˈhæpi/",
-    "phoneticUS": "/ˈhæpi/",
-    "definition": "快乐的; 幸福的"
-  },
-  {
-    "wordID": "55",
-    "word": "play football",
-    "phoneticUK": "/pleɪ ˈfʊtbɔːl/",
-    "phoneticUS": "/pleɪ ˈfʊtbɔːl/",
-    "definition": "踢足球"
-  },
-  {
-    "wordID": "56",
-    "word": "fly a kite",
-    "phoneticUK": "/flaɪ ə kaɪt/",
-    "phoneticUS": "/flaɪ ə kaɪt/",
-    "definition": "放风筝"
-  },
-  {
-    "wordID": "57",
-    "word": "ride a bike",
-    "phoneticUK": "/raɪd ə baɪk/",
-    "phoneticUS": "/raɪd ə baɪk/",
-    "definition": "骑自行车"
-  },
-  {
-    "wordID": "58",
-    "word": "make a model plane",
-    "phoneticUK": "/meɪk ə ˈmɒdl pleɪn/",
-    "phoneticUS": "/meɪk ə ˈmɑːdl pleɪn/",
-    "definition": "做飞机模型"
-  },
-  {
-    "wordID": "59",
-    "word": "swim",
-    "phoneticUK": "/swɪm/",
-    "phoneticUS": "/swɪm/",
-    "definition": "游泳"
-  },
-  {
-    "wordID": "60",
-    "word": "make a snowman",
-    "phoneticUK": "/meɪk ə ˈsnəʊmæn/",
-    "phoneticUS": "/meɪk ə ˈsnoʊmæn/",
-    "definition": "堆雪人"
-  },
-  {
-    "wordID": "61",
-    "word": "can't",
-    "phoneticUK": "/kɑːnt/",
-    "phoneticUS": "/kænt/",
-    "definition": "不能，不会"
-  },
-  {
-    "wordID": "62",
-    "word": "rainy",
-    "phoneticUK": "/ˈreɪni/",
-    "phoneticUS": "/ˈreɪni/",
-    "definition": "下雨的"
-  },
-  {
-    "wordID": "63",
-    "word": "cloudy",
-    "phoneticUK": "/ˈklaʊdi/",
-    "phoneticUS": "/ˈklaʊdi/",
-    "definition": "多云的"
-  },
-  {
-    "wordID": "64",
-    "word": "snowy",
-    "phoneticUK": "/ˈsnəʊi/",
-    "phoneticUS": "/ˈsnoʊi/",
-    "definition": "下雪的"
-  },
-  {
-    "wordID": "65",
-    "word": "windy",
-    "phoneticUK": "/ˈwɪndi/",
-    "phoneticUS": "/ˈwɪndi/",
-    "definition": "刮风的"
-  },
-  {
-    "wordID": "66",
-    "word": "sunny",
-    "phoneticUK": "/ˈsʌni/",
-    "phoneticUS": "/ˈsʌni/",
-    "definition": "晴朗的"
-  },
-  {
-    "wordID": "67",
-    "word": "umbrella",
-    "phoneticUK": "/ʌmˈbrelə/",
-    "phoneticUS": "/ʌmˈbrelə/",
-    "definition": "雨伞"
-  },
-  {
-    "wordID": "68",
-    "word": "weather",
-    "phoneticUK": "/ˈweðə(r)/",
-    "phoneticUS": "/ˈweðər/",
-    "definition": "天气"
-  },
-  {
-    "wordID": "69",
-    "word": "wow",
-    "phoneticUK": "/waʊ/",
-    "phoneticUS": "/waʊ/",
-    "definition": "哇"
-  },
-  {
-    "wordID": "70",
-    "word": "let's",
-    "phoneticUK": "/lets/",
-    "phoneticUS": "/lets/",
-    "definition": "让我们……"
-  },
-  {
-    "wordID": "71",
-    "word": "spring",
-    "phoneticUK": "/sprɪŋ/",
-    "phoneticUS": "/sprɪŋ/",
-    "definition": "春天"
-  },
-  {
-    "wordID": "72",
-    "word": "summer",
-    "phoneticUK": "/ˈsʌmə(r)/",
-    "phoneticUS": "/ˈsʌmər/",
-    "definition": "夏天"
-  },
-  {
-    "wordID": "73",
-    "word": "autumn",
-    "phoneticUK": "/ˈɔːtəm/",
-    "phoneticUS": "/ˈɔːtəm/",
-    "definition": "秋天"
-  },
-  {
-    "wordID": "74",
-    "word": "winter",
-    "phoneticUK": "/ˈwɪntə(r)/",
-    "phoneticUS": "/ˈwɪntər/",
-    "definition": "冬天"
-  },
-  {
-    "wordID": "75",
-    "word": "hot",
-    "phoneticUK": "/hɒt/",
-    "phoneticUS": "/hɑːt/",
-    "definition": "炎热的"
-  },
-  {
-    "wordID": "76",
-    "word": "warm",
-    "phoneticUK": "/wɔːm/",
-    "phoneticUS": "/wɔːrm/",
-    "definition": "温暖的"
-  },
-  {
-    "wordID": "77",
-    "word": "cool",
-    "phoneticUK": "/kuːl/",
-    "phoneticUS": "/kuːl/",
-    "definition": "凉爽的"
-  },
-  {
-    "wordID": "78",
-    "word": "cold",
-    "phoneticUK": "/kəʊld/",
-    "phoneticUS": "/koʊld/",
-    "definition": "寒冷的"
-  },
-  {
-    "wordID": "79",
-    "word": "favourite",
-    "phoneticUK": "/ˈfeɪvərɪt/",
-    "phoneticUS": "/ˈfeɪvərɪt/",
-    "definition": "最喜欢的"
-  },
-  {
-    "wordID": "80",
-    "word": "season",
-    "phoneticUK": "/ˈsiːzn/",
-    "phoneticUS": "/ˈsiːzn/",
-    "definition": "季节"
-  },
-  {
-    "wordID": "81",
-    "word": "eleven",
-    "phoneticUK": "/ɪˈlevn/",
-    "phoneticUS": "/ɪˈlevn/",
-    "definition": "十一"
-  },
-  {
-    "wordID": "82",
-    "word": "twelve",
-    "phoneticUK": "/twelv/",
-    "phoneticUS": "/twelv/",
-    "definition": "十二"
-  },
-  {
-    "wordID": "83",
-    "word": "twenty",
-    "phoneticUK": "/ˈtwenti/",
-    "phoneticUS": "/ˈtwenti/",
-    "definition": "二十"
-  },
-  {
-    "wordID": "84",
-    "word": "thirty",
-    "phoneticUK": "/ˈθɜːti/",
-    "phoneticUS": "/ˈθɜːrti/",
-    "definition": "三十"
-  },
-  {
-    "wordID": "85",
-    "word": "forty",
-    "phoneticUK": "/ˈfɔːti/",
-    "phoneticUS": "/ˈfɔːrti/",
-    "definition": "四十"
-  },
-  {
-    "wordID": "86",
-    "word": "fifty",
-    "phoneticUK": "/ˈfɪfti/",
-    "phoneticUS": "/ˈfɪfti/",
-    "definition": "五十"
-  },
-  {
-    "wordID": "87",
-    "word": "thirteen",
-    "phoneticUK": "/ˌθɜːˈtiːn/",
-    "phoneticUS": "/ˌθɜːrˈtiːn/",
-    "definition": "十三"
-  },
-  {
-    "wordID": "88",
-    "word": "fourteen",
-    "phoneticUK": "/ˌfɔːˈtiːn/",
-    "phoneticUS": "/ˌfɔːrˈtiːn/",
-    "definition": "十四"
-  },
-  {
-    "wordID": "89",
-    "word": "fifteen",
-    "phoneticUK": "/ˌfɪfˈtiːn/",
-    "phoneticUS": "/ˌfɪfˈtiːn/",
-    "definition": "十五"
-  },
-  {
-    "wordID": "90",
-    "word": "time",
-    "phoneticUK": "/taɪm/",
-    "phoneticUS": "/taɪm/",
-    "definition": "时间"
-  },
-  {
-    "wordID": "91",
-    "word": "playtime",
-    "phoneticUK": "/ˈpleɪtaɪm/",
-    "phoneticUS": "/ˈpleɪtaɪm/",
-    "definition": "游戏时间，课间休息时间"
-  },
-  {
-    "wordID": "92",
-    "word": "get up",
-    "phoneticUK": "/ɡet ʌp/",
-    "phoneticUS": "/ɡet ʌp/",
-    "definition": "起床"
-  },
-  {
-    "wordID": "93",
-    "word": "eat breakfast",
-    "phoneticUK": "/iːt ˈbrekfəst/",
-    "phoneticUS": "/iːt ˈbrekfəst/",
-    "definition": "吃早饭"
-  },
-  {
-    "wordID": "94",
-    "word": "go to school",
-    "phoneticUK": "/ɡəʊ tuː skuːl/",
-    "phoneticUS": "/ɡoʊ tuː skuːl/",
-    "definition": "上学"
-  },
-  {
-    "wordID": "95",
-    "word": "eat lunch",
-    "phoneticUK": "/iːt lʌntʃ/",
-    "phoneticUS": "/iːt lʌntʃ/",
-    "definition": "吃午饭"
-  },
-  {
-    "wordID": "96",
-    "word": "go home",
-    "phoneticUK": "/ɡəʊ həʊm/",
-    "phoneticUS": "/ɡoʊ hoʊm/",
-    "definition": "回家"
-  },
-  {
-    "wordID": "97",
-    "word": "eat dinner",
-    "phoneticUK": "/iːt ˈdɪnə(r)/",
-    "phoneticUS": "/iːt ˈdɪnər/",
-    "definition": "吃晚饭"
-  },
-  {
-    "wordID": "98",
-    "word": "go to bed",
-    "phoneticUK": "/ɡəʊ tuː bed/",
-    "phoneticUS": "/ɡoʊ tuː bed/",
-    "definition": "上床，睡觉"
-  },
-  {
-    "wordID": "99",
-    "word": "when",
-    "phoneticUK": "/wen/",
-    "phoneticUS": "/wen/",
-    "definition": "什么时候，何时"
-  },
-  {
-    "wordID": "100",
-    "word": "every day",
-    "phoneticUK": "/ˈevri deɪ/",
-    "phoneticUS": "/ˈevri deɪ/",
-    "definition": "每天"
   }
 ]
